@@ -84,12 +84,14 @@ allowBuilds:
   tree-sitter-python: false
   tree-sitter-qmljs: false
   tree-sitter-query: false
+  tree-sitter-razor: false
   tree-sitter-regex: false
   tree-sitter-requirements: false
   tree-sitter-ruby: false
   tree-sitter-rust: false
   tree-sitter-scala: false
   tree-sitter-scss: false
+  tree-sitter-sln: false
   tree-sitter-solidity: false
   tree-sitter-ssh-config: false
   tree-sitter-svelte: false

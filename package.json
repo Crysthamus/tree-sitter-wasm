@@ -1,6 +1,6 @@
 {
 	"name": "tree-sitter-wasm",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Pre-built WebAssembly binaries and queries for tree-sitter grammars.",
 	"keywords": [
 		"incremental",
@@ -134,12 +134,14 @@
 		"tree-sitter-python": "^0.25.0",
 		"tree-sitter-qmljs": "^0.3.0",
 		"tree-sitter-query": "git+https://github.com/tree-sitter-grammars/tree-sitter-query.git#fc5409c6820dd5e02b0b0a309d3da2bfcde2db17",
+		"tree-sitter-razor": "git+https://github.com/tris203/tree-sitter-razor.git#a3399c26610817c6d32c7643793caf3729cfb6d2",
 		"tree-sitter-regex": "^0.25.0",
 		"tree-sitter-requirements": "^0.6.1",
 		"tree-sitter-ruby": "^0.23.1",
 		"tree-sitter-rust": "^0.24.0",
 		"tree-sitter-scala": "^0.24.0",
 		"tree-sitter-scss": "^1.0.0",
+		"tree-sitter-sln": "git+https://github.com/Crysthamus/tree-sitter-sln#0f4b3904894905fe3f8dee8c44d88b861cd4caec",
 		"tree-sitter-solidity": "^1.2.13",
 		"tree-sitter-ssh-config": "git+https://github.com/tree-sitter-grammars/tree-sitter-ssh-config.git#71d2693deadaca8cdc09e38ba41d2f6042da1616",
 		"tree-sitter-svelte": "git+https://github.com/Himujjal/tree-sitter-svelte#60ea1d673a1a3eeeb597e098d9ada9ed0c79ef4b",

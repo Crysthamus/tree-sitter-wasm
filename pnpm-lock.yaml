@@ -465,6 +465,9 @@ importers:
       tree-sitter-query:
         specifier: git+https://github.com/tree-sitter-grammars/tree-sitter-query.git#fc5409c6820dd5e02b0b0a309d3da2bfcde2db17
         version: https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/fc5409c6820dd5e02b0b0a309d3da2bfcde2db17
+      tree-sitter-razor:
+        specifier: git+https://github.com/tris203/tree-sitter-razor.git#a3399c26610817c6d32c7643793caf3729cfb6d2
+        version: https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/a3399c26610817c6d32c7643793caf3729cfb6d2
       tree-sitter-regex:
         specifier: ^0.25.0
         version: 0.25.0
@@ -483,6 +486,9 @@ importers:
       tree-sitter-scss:
         specifier: ^1.0.0
         version: 1.0.0
+      tree-sitter-sln:
+        specifier: git+https://github.com/Crysthamus/tree-sitter-sln#0f4b3904894905fe3f8dee8c44d88b861cd4caec
+        version: https://codeload.github.com/Crysthamus/tree-sitter-sln/tar.gz/0f4b3904894905fe3f8dee8c44d88b861cd4caec
       tree-sitter-solidity:
         specifier: ^1.2.13
         version: 1.2.13
@@ -1791,6 +1797,15 @@ packages:
       tree-sitter:
         optional: true
 
+  tree-sitter-razor@https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/a3399c26610817c6d32c7643793caf3729cfb6d2:
+    resolution: {gitHosted: true, integrity: sha512-vVGHsIQS+Jk57/LyDQqtAaCb55RY+dSCPwwyQgXo3SJOCFpVv1o8aDNIGega04e01fio7+PMY5pmAeyG0DhnGg==, tarball: https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/a3399c26610817c6d32c7643793caf3729cfb6d2}
+    version: 0.1.1
+    peerDependencies:
+      tree-sitter: ^0.21.1
+    peerDependenciesMeta:
+      tree-sitter:
+        optional: true
+
   tree-sitter-regex@0.25.0:
     resolution: {integrity: sha512-Xf3KU+LOfCS6djfIzEHdVlq4ITinLNfVy7LkWqFr0R4ZG1SGV2u/HS4ct+TNwuLTPfU9EA/tQZnbJ/KLtgljgQ==}
     peerDependencies:
@@ -1835,6 +1850,15 @@ packages:
     resolution: {integrity: sha512-CYHEkSG4RTGHfwwQSXwsnagRUNr2Gh2jzrvNUXz95OfSzOdUAtPx4aM1zOGSprAzOPnwlBQfbYs0vVsklf3WWA==}
     peerDependencies:
       tree-sitter: ^0.21.0
+    peerDependenciesMeta:
+      tree-sitter:
+        optional: true
+
+  tree-sitter-sln@https://codeload.github.com/Crysthamus/tree-sitter-sln/tar.gz/0f4b3904894905fe3f8dee8c44d88b861cd4caec:
+    resolution: {gitHosted: true, integrity: sha512-IIk/4WiawvIccXvlTqhegR9VDLJgcDC48fVc5rV4isMBeENiS8iiJUcZqsJmjBYnjBojvl1Jktfr6ks9LWMnwA==, tarball: https://codeload.github.com/Crysthamus/tree-sitter-sln/tar.gz/0f4b3904894905fe3f8dee8c44d88b861cd4caec}
+    version: 0.1.0
+    peerDependencies:
+      tree-sitter: ^0.25.0
     peerDependenciesMeta:
       tree-sitter:
         optional: true
@@ -3040,6 +3064,12 @@ snapshots:
       node-addon-api: 8.7.0
       node-gyp-build: 4.8.4
 
+  tree-sitter-razor@https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/a3399c26610817c6d32c7643793caf3729cfb6d2:
+    dependencies:
+      node-addon-api: 8.7.0
+      node-gyp-build: 4.8.4
+      tree-sitter-c-sharp: 0.23.5
+
   tree-sitter-regex@0.25.0:
     dependencies:
       node-addon-api: 8.7.0
@@ -3070,6 +3100,11 @@ snapshots:
       node-addon-api: 8.7.0
       node-gyp-build: 4.8.4
       tree-sitter-css: 0.20.0
+
+  tree-sitter-sln@https://codeload.github.com/Crysthamus/tree-sitter-sln/tar.gz/0f4b3904894905fe3f8dee8c44d88b861cd4caec:
+    dependencies:
+      node-addon-api: 8.7.0
+      node-gyp-build: 4.8.4
 
   tree-sitter-solidity@1.2.13:
     dependencies:
