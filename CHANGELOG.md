@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.6] - 2026-06-01
+### :wrench: Chores
+- [`f840684`](https://github.com/Crysthamus/tree-sitter-wasm/commit/f840684d695d7b55e894c4358c8cca124fedb4a6) - update tree-sitter-sln *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+
+
 ## [v1.0.5] - 2026-05-31
 ### :sparkles: New Features
 - [`9fc6e9e`](https://github.com/Crysthamus/tree-sitter-wasm/commit/9fc6e9eb3f2144b409fb7d806cc1ff1339d17b14) - added razor, and sln parsers *(commit by [@Crysthamus](https://github.com/Crysthamus))*
@@ -39,3 +44,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [v1.0.4]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.0.3...v1.0.4
 [v1.0.5]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.0.4...v1.0.5
+[v1.0.6]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.0.5...v1.0.6
