@@ -337,8 +337,8 @@ importers:
         specifier: ^0.25.0
         version: 0.25.0
       tree-sitter-erlang:
-        specifier: git+https://github.com/WhatsApp/tree-sitter-erlang.git#e446ec60022a7cafe157805742b41c04b499cc5d
-        version: https://codeload.github.com/WhatsApp/tree-sitter-erlang/tar.gz/e446ec60022a7cafe157805742b41c04b499cc5d
+        specifier: git+https://github.com/WhatsApp/tree-sitter-erlang.git#836aa2b6c3af2c7cef3f84049b0ed6d44485a870
+        version: https://codeload.github.com/WhatsApp/tree-sitter-erlang/tar.gz/836aa2b6c3af2c7cef3f84049b0ed6d44485a870
       tree-sitter-fish:
         specifier: git+https://github.com/ram02z/tree-sitter-fish.git#f435b0bd772578c70e5d158b85267bb886316f88
         version: https://codeload.github.com/ram02z/tree-sitter-fish/tar.gz/f435b0bd772578c70e5d158b85267bb886316f88
@@ -364,8 +364,8 @@ importers:
         specifier: git+https://github.com/shunsambongi/tree-sitter-gitignore.git#f4685bf11ac466dd278449bcfe5fd014e94aa504
         version: https://codeload.github.com/shunsambongi/tree-sitter-gitignore/tar.gz/f4685bf11ac466dd278449bcfe5fd014e94aa504
       tree-sitter-gleam:
-        specifier: git+https://github.com/gleam-lang/tree-sitter-gleam.git#4e4643c2215c2b2343d9ec179c798818c132c9cc
-        version: https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/4e4643c2215c2b2343d9ec179c798818c132c9cc
+        specifier: git+https://github.com/gleam-lang/tree-sitter-gleam.git#0ae061fea67cb39639b47c7acc46cbf5d109fda1
+        version: https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/0ae061fea67cb39639b47c7acc46cbf5d109fda1
       tree-sitter-glsl:
         specifier: ^0.2.0
         version: 0.2.0
@@ -463,8 +463,8 @@ importers:
         specifier: ^0.3.0
         version: 0.3.0
       tree-sitter-query:
-        specifier: git+https://github.com/tree-sitter-grammars/tree-sitter-query.git#fc5409c6820dd5e02b0b0a309d3da2bfcde2db17
-        version: https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/fc5409c6820dd5e02b0b0a309d3da2bfcde2db17
+        specifier: git+https://github.com/tree-sitter-grammars/tree-sitter-query.git#15e00db655cf1708cf8e4b172b2f321d9b7b98c1
+        version: https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/15e00db655cf1708cf8e4b172b2f321d9b7b98c1
       tree-sitter-razor:
         specifier: git+https://github.com/tris203/tree-sitter-razor.git#a3399c26610817c6d32c7643793caf3729cfb6d2
         version: https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/a3399c26610817c6d32c7643793caf3729cfb6d2
@@ -1470,8 +1470,8 @@ packages:
       tree-sitter:
         optional: true
 
-  tree-sitter-erlang@https://codeload.github.com/WhatsApp/tree-sitter-erlang/tar.gz/e446ec60022a7cafe157805742b41c04b499cc5d:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/WhatsApp/tree-sitter-erlang/tar.gz/e446ec60022a7cafe157805742b41c04b499cc5d}
+  tree-sitter-erlang@https://codeload.github.com/WhatsApp/tree-sitter-erlang/tar.gz/836aa2b6c3af2c7cef3f84049b0ed6d44485a870:
+    resolution: {gitHosted: true, integrity: sha512-wgTvtOD6SU75VuRT2ItTccLxiWByo6JKd93ASaJJJQDrw2TWY3DMa46btt7kyWPptTG32OeeWBlnR97VO5oYgQ==, tarball: https://codeload.github.com/WhatsApp/tree-sitter-erlang/tar.gz/836aa2b6c3af2c7cef3f84049b0ed6d44485a870}
     version: 0.0.0
     peerDependencies:
       tree-sitter: ^0.22.4
@@ -1537,8 +1537,8 @@ packages:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/shunsambongi/tree-sitter-gitignore/tar.gz/f4685bf11ac466dd278449bcfe5fd014e94aa504}
     version: 0.1.0
 
-  tree-sitter-gleam@https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/4e4643c2215c2b2343d9ec179c798818c132c9cc:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/4e4643c2215c2b2343d9ec179c798818c132c9cc}
+  tree-sitter-gleam@https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/0ae061fea67cb39639b47c7acc46cbf5d109fda1:
+    resolution: {gitHosted: true, integrity: sha512-NeZegAAepmBjttWQc2Btf3uj79XZNmSLyyeUgzKK9NVc0LxabctAp2CCDXhhU0zH1o4P2o0pngByMNPh5nX8sw==, tarball: https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/0ae061fea67cb39639b47c7acc46cbf5d109fda1}
     version: 1.0.0
     peerDependencies:
       tree-sitter: ^0.21.0
@@ -1788,8 +1788,8 @@ packages:
       tree_sitter:
         optional: true
 
-  tree-sitter-query@https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/fc5409c6820dd5e02b0b0a309d3da2bfcde2db17:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/fc5409c6820dd5e02b0b0a309d3da2bfcde2db17}
+  tree-sitter-query@https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/15e00db655cf1708cf8e4b172b2f321d9b7b98c1:
+    resolution: {gitHosted: true, integrity: sha512-EZCyUqLXb6iVZUHytX8d6p27EkOyiel4qXAUuevNxz68jpvq2TF5IzS+bEWBXKuVSc9axqCdxQV/vAepeYIuyA==, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/15e00db655cf1708cf8e4b172b2f321d9b7b98c1}
     version: 0.8.0
     peerDependencies:
       tree-sitter: ^0.22.4
@@ -2857,7 +2857,7 @@ snapshots:
       node-addon-api: 8.7.0
       node-gyp-build: 4.8.4
 
-  tree-sitter-erlang@https://codeload.github.com/WhatsApp/tree-sitter-erlang/tar.gz/e446ec60022a7cafe157805742b41c04b499cc5d:
+  tree-sitter-erlang@https://codeload.github.com/WhatsApp/tree-sitter-erlang/tar.gz/836aa2b6c3af2c7cef3f84049b0ed6d44485a870:
     dependencies:
       node-addon-api: 7.1.1
       node-gyp-build: 4.8.4
@@ -2902,7 +2902,7 @@ snapshots:
     dependencies:
       nan: 2.27.0
 
-  tree-sitter-gleam@https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/4e4643c2215c2b2343d9ec179c798818c132c9cc:
+  tree-sitter-gleam@https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/0ae061fea67cb39639b47c7acc46cbf5d109fda1:
     dependencies:
       nan: 2.27.0
 
@@ -3059,7 +3059,7 @@ snapshots:
       node-addon-api: 8.7.0
       node-gyp-build: 4.8.4
 
-  tree-sitter-query@https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/fc5409c6820dd5e02b0b0a309d3da2bfcde2db17:
+  tree-sitter-query@https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/15e00db655cf1708cf8e4b172b2f321d9b7b98c1:
     dependencies:
       node-addon-api: 8.7.0
       node-gyp-build: 4.8.4
