@@ -1,4 +1,4 @@
-# tree-sitter-wasm [![npm version](https://img.shields.io/npm/v/tree-sitter-wasm.svg?style=flat-square)](https://www.npmjs.com/package/tree-sitter-wasm)
+# tree-sitter-wasm [![npm version](https://img.shields.io/npm/v/tree-sitter-wasm.svg?style=flat-square)](https://www.npmjs.com/package/tree-sitter-wasm) [![Socket Badge](https://badge.socket.dev/npm/package/tree-sitter-wasm/1.0.7)](https://badge.socket.dev/npm/package/tree-sitter-wasm/1.0.7)
 Prebuilt WASM binaries and query files(`.scm`) for tree-sitter's language parsers.
 You can find a list of supported languages [here](https://app.unpkg.com/tree-sitter-wasm/files/out)
 
@@ -40,6 +40,7 @@ Each language directory includes a `tree-sitter-<lang>.wasm` file but may also i
 - `tags.scm`
 - `folds.scm`
 - `indents.scm`
+
 Certain languages also contain special queries like: `nova-symbols`, please refer to the manifest.json or to the out dir in unpkg. 
 
 ```txt
