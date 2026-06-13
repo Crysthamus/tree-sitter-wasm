@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.8] - 2026-06-13
+### :wrench: Chores
+- [`05eded9`](https://github.com/Crysthamus/tree-sitter-wasm/commit/05eded93af8f7c13d20bb53e9a51bfdaa4b3d7f3) - update readme *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+- [`a61d121`](https://github.com/Crysthamus/tree-sitter-wasm/commit/a61d1219e6a573576c99c0fd98adfae4357f6a06) - update parsers for gleam and razor *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+
+
 ## [v1.0.7] - 2026-06-05
 ### :wrench: Chores
 - [`9c31fb4`](https://github.com/Crysthamus/tree-sitter-wasm/commit/9c31fb41e14603db730aabbe30e9041a664d92b4) - **gleam, erlang, query**: update parsers *(commit by [@Crysthamus](https://github.com/Crysthamus))*
@@ -51,3 +57,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.0.5]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.0.4...v1.0.5
 [v1.0.6]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.0.5...v1.0.6
 [v1.0.7]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.0.6...v1.0.7
+[v1.0.8]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.0.7...v1.0.8
