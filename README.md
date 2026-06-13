@@ -1,4 +1,4 @@
-# tree-sitter-wasm [![npm version](https://img.shields.io/npm/v/tree-sitter-wasm.svg?style=flat-square)](https://www.npmjs.com/package/tree-sitter-wasm) [![Socket Badge](https://badge.socket.dev/npm/package/tree-sitter-wasm/1.0.7)](https://badge.socket.dev/npm/package/tree-sitter-wasm/1.0.7)
+# tree-sitter-wasm [![npm version](https://img.shields.io/npm/v/tree-sitter-wasm.svg?style=flat-square)](https://www.npmjs.com/package/tree-sitter-wasm) [![Socket Badge](https://badge.socket.dev/npm/package/tree-sitter-wasm)](https://badge.socket.dev/npm/package/tree-sitter-wasm)
 Prebuilt WASM binaries and query files(`.scm`) for tree-sitter's language parsers.
 You can find a list of supported languages [here](https://app.unpkg.com/tree-sitter-wasm/files/out)
 
@@ -46,10 +46,13 @@ Certain languages also contain special queries like: `nova-symbols`, please refe
 ```txt
 python/
 ├── tree-sitter-python.wasm
+├── folds.scm
 ├── highlights.scm
+├── indents.scm
+├── injections.scm
+├── locals.scm
 └── tags.scm
 ```
-
 
 ## Licenses
 The licenses for the generated .wasm and .scm files belong to their respective upstream grammar authors and can be found on their github repos.

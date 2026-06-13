@@ -1,6 +1,6 @@
 {
 	"name": "tree-sitter-wasm",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "Pre-built WebAssembly binaries and queries for tree-sitter grammars.",
 	"keywords": [
 		"incremental",
@@ -100,7 +100,7 @@
 		"tree-sitter-git-rebase": "git+https://github.com/the-mikedavis/tree-sitter-git-rebase.git#32686d6b72980b36f876ae2d07719c9c3ed154e2",
 		"tree-sitter-gitattributes": "^0.1.6",
 		"tree-sitter-gitignore": "git+https://github.com/shunsambongi/tree-sitter-gitignore.git#f4685bf11ac466dd278449bcfe5fd014e94aa504",
-		"tree-sitter-gleam": "git+https://github.com/gleam-lang/tree-sitter-gleam.git#0ae061fea67cb39639b47c7acc46cbf5d109fda1",
+		"tree-sitter-gleam": "git+https://github.com/gleam-lang/tree-sitter-gleam.git#c610c282ef73f830d80c1f0999dce8e83f024ef5",
 		"tree-sitter-glsl": "^0.2.0",
 		"tree-sitter-go": "^0.25.0",
 		"tree-sitter-godot-resource": "^0.7.0",
@@ -134,7 +134,7 @@
 		"tree-sitter-python": "^0.25.0",
 		"tree-sitter-qmljs": "^0.3.0",
 		"tree-sitter-query": "git+https://github.com/tree-sitter-grammars/tree-sitter-query.git#15e00db655cf1708cf8e4b172b2f321d9b7b98c1",
-		"tree-sitter-razor": "git+https://github.com/tris203/tree-sitter-razor.git#a3399c26610817c6d32c7643793caf3729cfb6d2",
+		"tree-sitter-razor": "git+https://github.com/tris203/tree-sitter-razor.git#900f53dc6cc592f6e616adc2f732cb0f66fc9147",
 		"tree-sitter-regex": "^0.25.0",
 		"tree-sitter-requirements": "^0.6.1",
 		"tree-sitter-ruby": "^0.23.1",

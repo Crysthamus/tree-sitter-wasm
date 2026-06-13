@@ -364,8 +364,8 @@ importers:
         specifier: git+https://github.com/shunsambongi/tree-sitter-gitignore.git#f4685bf11ac466dd278449bcfe5fd014e94aa504
         version: https://codeload.github.com/shunsambongi/tree-sitter-gitignore/tar.gz/f4685bf11ac466dd278449bcfe5fd014e94aa504
       tree-sitter-gleam:
-        specifier: git+https://github.com/gleam-lang/tree-sitter-gleam.git#0ae061fea67cb39639b47c7acc46cbf5d109fda1
-        version: https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/0ae061fea67cb39639b47c7acc46cbf5d109fda1
+        specifier: git+https://github.com/gleam-lang/tree-sitter-gleam.git#c610c282ef73f830d80c1f0999dce8e83f024ef5
+        version: https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/c610c282ef73f830d80c1f0999dce8e83f024ef5
       tree-sitter-glsl:
         specifier: ^0.2.0
         version: 0.2.0
@@ -466,8 +466,8 @@ importers:
         specifier: git+https://github.com/tree-sitter-grammars/tree-sitter-query.git#15e00db655cf1708cf8e4b172b2f321d9b7b98c1
         version: https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/15e00db655cf1708cf8e4b172b2f321d9b7b98c1
       tree-sitter-razor:
-        specifier: git+https://github.com/tris203/tree-sitter-razor.git#a3399c26610817c6d32c7643793caf3729cfb6d2
-        version: https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/a3399c26610817c6d32c7643793caf3729cfb6d2
+        specifier: git+https://github.com/tris203/tree-sitter-razor.git#900f53dc6cc592f6e616adc2f732cb0f66fc9147
+        version: https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/900f53dc6cc592f6e616adc2f732cb0f66fc9147
       tree-sitter-regex:
         specifier: ^0.25.0
         version: 0.25.0
@@ -1537,8 +1537,8 @@ packages:
     resolution: {gitHosted: true, tarball: https://codeload.github.com/shunsambongi/tree-sitter-gitignore/tar.gz/f4685bf11ac466dd278449bcfe5fd014e94aa504}
     version: 0.1.0
 
-  tree-sitter-gleam@https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/0ae061fea67cb39639b47c7acc46cbf5d109fda1:
-    resolution: {gitHosted: true, integrity: sha512-NeZegAAepmBjttWQc2Btf3uj79XZNmSLyyeUgzKK9NVc0LxabctAp2CCDXhhU0zH1o4P2o0pngByMNPh5nX8sw==, tarball: https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/0ae061fea67cb39639b47c7acc46cbf5d109fda1}
+  tree-sitter-gleam@https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/c610c282ef73f830d80c1f0999dce8e83f024ef5:
+    resolution: {gitHosted: true, integrity: sha512-plquBQ+ZaK6zt8URCu0oNKxVC/b/8YieHBia/3AAEmijwYxiNaNI/rsygadXodYy59eomnHyf2e+FlfFtQUrhw==, tarball: https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/c610c282ef73f830d80c1f0999dce8e83f024ef5}
     version: 1.0.0
     peerDependencies:
       tree-sitter: ^0.21.0
@@ -1797,8 +1797,8 @@ packages:
       tree-sitter:
         optional: true
 
-  tree-sitter-razor@https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/a3399c26610817c6d32c7643793caf3729cfb6d2:
-    resolution: {gitHosted: true, integrity: sha512-vVGHsIQS+Jk57/LyDQqtAaCb55RY+dSCPwwyQgXo3SJOCFpVv1o8aDNIGega04e01fio7+PMY5pmAeyG0DhnGg==, tarball: https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/a3399c26610817c6d32c7643793caf3729cfb6d2}
+  tree-sitter-razor@https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/900f53dc6cc592f6e616adc2f732cb0f66fc9147:
+    resolution: {gitHosted: true, integrity: sha512-w1c3uZVPZAOgQMHdA30Uio6y40fXFrFfDXRHzlfEUjAkRt+ciXrEtxfsvhLn+EmvMivbaY91ymoA39DB95hTXg==, tarball: https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/900f53dc6cc592f6e616adc2f732cb0f66fc9147}
     version: 0.1.1
     peerDependencies:
       tree-sitter: ^0.21.1
@@ -2902,7 +2902,7 @@ snapshots:
     dependencies:
       nan: 2.27.0
 
-  tree-sitter-gleam@https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/0ae061fea67cb39639b47c7acc46cbf5d109fda1:
+  tree-sitter-gleam@https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/c610c282ef73f830d80c1f0999dce8e83f024ef5:
     dependencies:
       nan: 2.27.0
 
@@ -3064,7 +3064,7 @@ snapshots:
       node-addon-api: 8.7.0
       node-gyp-build: 4.8.4
 
-  tree-sitter-razor@https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/a3399c26610817c6d32c7643793caf3729cfb6d2:
+  tree-sitter-razor@https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/900f53dc6cc592f6e616adc2f732cb0f66fc9147:
     dependencies:
       node-addon-api: 8.7.0
       node-gyp-build: 4.8.4
