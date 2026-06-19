@@ -94,6 +94,9 @@ jobs:
           restore-keys: |
             wasm-build-${{ runner.os }}-shard-${{ matrix.shard }}-
 
+      - name: Install Binaryen (wasm-opt)
+        run: sudo apt-get update && sudo apt-get install -y binaryen
+
       - name: Build WASMs
         run: pnpm run build
         env:
@@ -217,3 +220,4 @@ jobs:
           fi
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+

@@ -307,10 +307,21 @@ async function processSourceGrammar(grammarDirs, depPath, baseCleanName) {
 			const outFiles = await fs.readdir(langOutDir);
 			const generatedWasm = outFiles.find((f) => f.endsWith(".wasm"));
 
-			if (generatedWasm && generatedWasm !== `tree-sitter-${langName}.wasm`) {
-				await fs.rename(
-					path.join(langOutDir, generatedWasm),
-					path.join(langOutDir, `tree-sitter-${langName}.wasm`),
+			const finalWasmName = `tree-sitter-${langName}.wasm`;
+			const finalWasmPath = path.join(langOutDir, finalWasmName);
+
+			if (generatedWasm && generatedWasm !== finalWasmName) {
+				await fs.rename(path.join(langOutDir, generatedWasm), finalWasmPath);
+			}
+
+			try {
+				console.log(`Optimizing binary size for ${langName}...`);
+				await execAsync(
+					`wasm-opt -Oz "${finalWasmPath}" -o "${finalWasmPath}"`,
+				);
+			} catch (optError) {
+				console.warn(
+					`[Warning] wasm-opt failed or is missing. Skipping optimization for ${langName}. Error: ${optError.message.split("\n")[0]}`,
 				);
 			}
 
