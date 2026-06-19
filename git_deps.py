@@ -1,104 +1,130 @@
+import asyncio
 import json
+import os
 import re
+import sys
 import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
-GIT_URL_PATTERN = re.compile(
-    r"^git\+https://github.com/([^/]+)/([^/#]+?)(?:\.git)?(?:#(.*))?$"
-)
+PACKAGE_FILE = Path("package.json").resolve()
+QUARANTINE_DAYS = 7
+CONCURRENCY = 3
+
+GIT_URL_PATTERN = re.compile(r"^git\+https://github\.com/([^/]+)/([^/#]+?)(?:\.git)?(?:#(.*))?$")
+HEX_HASH_PATTERN = re.compile(r"^[0-9a-fA-F]{7,40}$")
 
 
-def get_json_from_url(url):
-    req = urllib.request.Request(url)
+def fetch_json(url):
+    """
+    Fetches JSON from the GitHub API.
+    """
+    headers = {
+        "Accept": "application/vnd.github.v3+json",
+        "User-Agent": "Tree-Sitter-Wasm-Updater"
+    }
+    
+    if os.environ.get("GITHUB_TOKEN"):
+        headers["Authorization"] = f"Bearer {os.environ.get('GITHUB_TOKEN')}"
 
+    req = urllib.request.Request(url, headers=headers)
+    
     try:
         with urllib.request.urlopen(req) as response:
             return json.loads(response.read().decode())
     except urllib.error.HTTPError as e:
-        print(f"Error fetching {url}: {e.code}")
-        return None
+        if e.code in (403, 404):
+            return None  
+        raise RuntimeError(f"HTTP {e.code} for {url}")
 
 
-def get_latest_commit(owner, repo, sha=None):
-    url = f"https://api.github.com/repos/{owner}/{repo}/commits"
-    if sha:
-        url += f"?sha={sha}"
+async def check_quarantined_update(pkg_name, url, semaphore):
+    """
+    Checks a specific dependency for a newer commit that has passed the quarantine period.
+    """
+    async with semaphore:
+        match = GIT_URL_PATTERN.match(url)
+        if not match:
+            return
 
-    data = get_json_from_url(url)
-    if data and isinstance(data, list) and len(data) > 0:
-        return data[0]
-    return None
+        owner, repo, current_hash = match.groups()
+
+        if not current_hash or not HEX_HASH_PATTERN.match(current_hash):
+            return
+
+        cutoff = datetime.now(timezone.utc) - timedelta(days=QUARANTINE_DAYS)
+        cutoff_str = cutoff.strftime("%Y-%m-%dT%H:%M:%SZ")
+        
+        commits_url = f"https://api.github.com/repos/{owner}/{repo}/commits?until={cutoff_str}&per_page=1"
+
+        try:
+            commits = await asyncio.to_thread(fetch_json, commits_url)
+            if not commits or not isinstance(commits, list) or len(commits) == 0:
+                return
+
+            q_head_sha = commits[0]["sha"]
+
+            if q_head_sha.lower().startswith(current_hash.lower()):
+                return
+
+            compare_url = f"https://api.github.com/repos/{owner}/{repo}/compare/{current_hash}...{q_head_sha}"
+            compare_data = await asyncio.to_thread(fetch_json, compare_url)
+
+            if compare_data and compare_data.get("status") == "ahead":
+                new_url = f"git+https://github.com/{owner}/{repo}.git#{q_head_sha}"
+                
+                print(f"[{pkg_name}] Quarantined update available!")
+                print(f"  Current:     {current_hash[:7]}")
+                print(f"  Quarantined: {q_head_sha[:7]}")
+                print(f"  Target URL:  {new_url}\n")
+
+        except Exception as error:
+            print(f"[{pkg_name}] Failed to check updates: {error}")
 
 
-def is_hex_hash(s):
-    if not s:
-        return False
-    return bool(re.fullmatch(r"[0-9a-fA-F]{7,40}", s))
-
-
-def main():
-    package_file = "package.json"
-
+async def main():
+    """
+    Main application entry point.
+    """
     try:
-        with open(package_file, "r") as f:
-            pkg_data = json.load(f)
-    except FileNotFoundError:
-        print(f"Could not find {package_file} in the current directory.")
+        with open(PACKAGE_FILE, "r", encoding="utf-8") as f:
+            pkg = json.load(f)
+    except Exception as error:
+        print(f"Could not read or parse package.json: {error}")
+        sys.exit(1)
+
+    dev_deps = pkg.get("devDependencies", {})
+    
+    git_deps = [
+        (pkg_name, version) for pkg_name, version in dev_deps.items()
+        if "git+https://" in version
+    ]
+
+    if not git_deps:
+        print("No git+https dependencies found in package.json.")
         return
 
-    dev_deps = pkg_data.get("devDependencies", {})
-    modified = False
+    print(f"Checking {len(git_deps)} dependencies for updates older than {QUARANTINE_DAYS} days...\n")
 
-    for pkg, version in dev_deps.items():
-        match = GIT_URL_PATTERN.match(version)
-        if not match:
-            continue
+    semaphore = asyncio.Semaphore(CONCURRENCY)
+    
+    tasks = [
+        check_quarantined_update(pkg_name, version, semaphore)
+        for pkg_name, version in git_deps
+    ]
 
-        owner, repo, fragment = match.groups()
-        base_url = f"https://github.com/{owner}/{repo}"
-
-        if fragment == "release":
-            commit_data = get_latest_commit(owner, repo, sha="release")
-            if commit_data:
-                date_str = commit_data["commit"]["author"]["date"]
-                commit_date = datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%SZ").replace(
-                    tzinfo=timezone.utc
-                )
-
-                if datetime.now(timezone.utc) - commit_date > timedelta(days=365):
-                    print(
-                        f"[{pkg}] {base_url} (Has '#release' but hasn't been updated in over 1 year)"
-                    )
-            continue
-
-        if is_hex_hash(fragment):
-            latest_commit_data = get_latest_commit(owner, repo)
-            if latest_commit_data:
-                latest_sha = latest_commit_data["sha"]
-
-                if not latest_sha.startswith(fragment.lower()):
-                    print(
-                        f"[{pkg}] {base_url} (Newer commit available! Current: {fragment}, Latest: {latest_sha[:7]})"
-                    )
-
-        else:
-            latest_commit_data = get_latest_commit(owner, repo)
-            if latest_commit_data:
-                latest_sha = latest_commit_data["sha"]
-
-                new_version = f"git+https://github.com/{owner}/{repo}.git#{latest_sha}"
-                dev_deps[pkg] = new_version
-                modified = True
-                print(f"[{pkg}] Appended missing hash: {latest_sha[:7]}")
-
-    if modified:
-        with open(package_file, "w") as f:
-            json.dump(pkg_data, f, indent=4)
-        print("\nSuccessfully saved newly appended hashes to package.json")
-    else:
-        print("\nFinished checking. No new hashes needed appending.")
+    await asyncio.gather(*tasks)
+    
+    print("Finished checking for updates.")
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        print("\nApplication interrupted by user.")
+        sys.exit(1)
+    except Exception as e:
+        print(f"\nApplication crash: {e}")
+        sys.exit(1)
