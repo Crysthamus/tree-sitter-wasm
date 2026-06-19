@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.1] - 2026-06-19
+### :wrench: Chores
+- [`9f1b59b`](https://github.com/Crysthamus/tree-sitter-wasm/commit/9f1b59b697c392397c5f8b91f390b6fa754a516c) - add pr and issue templates *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+- [`6d4b9ff`](https://github.com/Crysthamus/tree-sitter-wasm/commit/6d4b9ff68b84730f6b464de3ec51803723e02f14) - add code of conduct *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+
+
 ## [v1.1.0] - 2026-06-19
 ### :sparkles: New Features
 - [`0684529`](https://github.com/Crysthamus/tree-sitter-wasm/commit/0684529504db056ee0854db9ec16e1e823b270c4) - **ci**: implement secure build pipeline with signing *(commit by [@Crysthamus](https://github.com/Crysthamus))*
@@ -67,3 +73,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.0.7]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.0.6...v1.0.7
 [v1.0.8]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.0.7...v1.0.8
 [v1.1.0]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.0.8...v1.1.0
+[v1.1.1]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.0...v1.1.1
