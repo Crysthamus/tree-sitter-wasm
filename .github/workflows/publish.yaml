@@ -24,13 +24,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
-          ref: main
 
       - name: Free Runner Space
-        uses: justinthelaw/maximize-github-runner-space@v0.9.0
+        uses: justinthelaw/maximize-github-runner-space@6324f43808f0fd33e16ee8a0141fca09974b38e0
         with:
           skip-components: cached-node, cached-python
           swapfile-size: 50G
@@ -48,7 +47,7 @@ jobs:
           registry-url: "https://registry.npmjs.org"
 
       - name: Setup and cache Emscripten
-        uses: mymindstorm/setup-emsdk@v15
+        uses: emscripten-core/setup-emsdk@0822153d7a5488b70a269cfa0a631b2a86ab4da2
         with:
           version: 5.0.1
           actions-cache-folder: 'emsdk-cache'
@@ -113,17 +112,18 @@ jobs:
   publish:
     needs: build
     runs-on: ubuntu-latest
+    if: github.event_name == 'release'
 
     permissions:
       contents: write
       id-token: write
+      attestations: write
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
-          ref: main
 
       - name: Generate Changelog from Conventional Commits
         if: github.event_name == 'release'
@@ -164,7 +164,7 @@ jobs:
         run: pnpm install
 
       - name: Download Build Artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           pattern: out-shard-*
           path: out
@@ -174,6 +174,39 @@ jobs:
         run: pnpm run build
         env:
           MANIFEST_ONLY: true
+
+      - name: Install Cosign
+        uses: sigstore/cosign-installer@v4.1.0
+
+      - name: Sign individual WASM blobs
+        run: |
+          find out -name "*.wasm" | while read -r wasm_file; do
+            echo "Signing $wasm_file..."
+            cosign sign-blob --yes \
+              --bundle "${wasm_file}.sigstore.json" \
+              "$wasm_file"
+          done
+
+      - name: Create Release Archive
+        run: |
+          mkdir -p staging
+          cp manifest.json staging/
+          cp -r out/* staging/
+          tar -czf build.tar.gz -C staging .
+
+      - name: Attest Build Provenance
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: |
+            build.tar.gz
+            staging/**/*.wasm
+
+      - name: Upload Artifact to GitHub Release
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload ${{ github.ref_name }} build.tar.gz
 
       - name: Publish to NPM
         run: |
