@@ -3,9 +3,7 @@ First off, thank you for considering contributing to `tree-sitter-wasm`! It's pe
 This document describes the process for contributing to the project. It is intended for anyone who is considering opening an **issue** or **pull request**.
 
 ## AI Usage
-AI usage is allowed (to some degree), you must make sure to self-review code before opening a PR or filing an issue.
-Autonomous AI usage is strictly prohibited. Whenever using AI generated/assisted code make sure you disclose it.
-AI generated media(other than text and code) is also strictly prohibited.
+AI usage is allowed however, you must make sure to self-review code before opening a PR or filing an issue.
 
 ## Adding/Updating Parsers
 Please **don't** open pull requests that add/update parsers, instead open an issue.

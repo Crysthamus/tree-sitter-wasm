@@ -277,8 +277,8 @@ importers:
         specifier: ^0.23.5
         version: 0.23.5
       tree-sitter-cairo:
-        specifier: git+https://github.com/starkware-libs/tree-sitter-cairo.git#8dcd77dbe7f68b2cc661031dff224dfc17bdbaf4
-        version: https://codeload.github.com/starkware-libs/tree-sitter-cairo/tar.gz/8dcd77dbe7f68b2cc661031dff224dfc17bdbaf4
+        specifier: git+https://github.com/starkware-libs/tree-sitter-cairo.git#b04ffb8c10a1a9faaea71a6757753fed4e1fcbfb
+        version: https://codeload.github.com/starkware-libs/tree-sitter-cairo/tar.gz/b04ffb8c10a1a9faaea71a6757753fed4e1fcbfb
       tree-sitter-cli:
         specifier: ^0.26.8
         version: 0.26.9
@@ -307,8 +307,8 @@ importers:
         specifier: ^0.21.1
         version: 0.21.1
       tree-sitter-d:
-        specifier: git+https://github.com/gdamore/tree-sitter-d.git#8bcb13dbddf16ca44a42f8e98e8cf3d86b2b2e48
-        version: https://codeload.github.com/gdamore/tree-sitter-d/tar.gz/8bcb13dbddf16ca44a42f8e98e8cf3d86b2b2e48
+        specifier: git+https://github.com/gdamore/tree-sitter-d.git#64f27931b4e6fdd75af1102c79bacbca68a8dacc
+        version: https://codeload.github.com/gdamore/tree-sitter-d/tar.gz/64f27931b4e6fdd75af1102c79bacbca68a8dacc
       tree-sitter-dart:
         specifier: git+https://github.com/UserNobody14/tree-sitter-dart.git#a9bdfa3db2fbc9b9f12c93450d04a671f33a5102
         version: https://codeload.github.com/UserNobody14/tree-sitter-dart/tar.gz/a9bdfa3db2fbc9b9f12c93450d04a671f33a5102
@@ -424,8 +424,8 @@ importers:
         specifier: git+https://github.com/tree-sitter-grammars/tree-sitter-make.git#70613f3d812cbabbd7f38d104d60a409c4008b43
         version: https://codeload.github.com/tree-sitter-grammars/tree-sitter-make/tar.gz/70613f3d812cbabbd7f38d104d60a409c4008b43
       tree-sitter-matlab:
-        specifier: git+https://github.com/acristoffers/tree-sitter-matlab.git#c2390a59016f74e7d5f75ef09510768b4f30217e
-        version: '@acristoffers/tree-sitter-matlab@https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/c2390a59016f74e7d5f75ef09510768b4f30217e'
+        specifier: git+https://github.com/acristoffers/tree-sitter-matlab.git#c9ef947ec67fb6b500d5def4f5e09b56990a9f91
+        version: '@acristoffers/tree-sitter-matlab@https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/c9ef947ec67fb6b500d5def4f5e09b56990a9f91'
       tree-sitter-nginx:
         specifier: ^1.0.1
         version: 1.0.1
@@ -433,14 +433,14 @@ importers:
         specifier: git+https://github.com/alaviss/tree-sitter-nim.git#3878440d9398515ae053c6f6024986e69868bb74
         version: https://codeload.github.com/alaviss/tree-sitter-nim/tar.gz/3878440d9398515ae053c6f6024986e69868bb74
       tree-sitter-nix:
-        specifier: git+https://github.com/nix-community/tree-sitter-nix.git#69fbfb02896cdd27cb7ff3cd61f7f3f6bde4f017
-        version: https://codeload.github.com/nix-community/tree-sitter-nix/tar.gz/69fbfb02896cdd27cb7ff3cd61f7f3f6bde4f017
+        specifier: git+https://github.com/nix-community/tree-sitter-nix.git#3d0173d903e630b6e14d17f1cf79488791379ded
+        version: https://codeload.github.com/nix-community/tree-sitter-nix/tar.gz/3d0173d903e630b6e14d17f1cf79488791379ded
       tree-sitter-objc:
         specifier: ^3.0.2
         version: 3.0.2
       tree-sitter-ocaml:
-        specifier: git+https://github.com/tree-sitter/tree-sitter-ocaml.git#59e2b9f63526db8b95cf59dde6b2402ec2e48b52
-        version: https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/59e2b9f63526db8b95cf59dde6b2402ec2e48b52
+        specifier: git+https://github.com/tree-sitter/tree-sitter-ocaml.git#527d62ef0f24ce0d97fbedf004921d75d0a7e086
+        version: https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/527d62ef0f24ce0d97fbedf004921d75d0a7e086
       tree-sitter-perl:
         specifier: git+https://github.com/tree-sitter-perl/tree-sitter-perl.git#567caa6fc6adbe19977bc6c21fd31275fc54d810
         version: https://codeload.github.com/tree-sitter-perl/tree-sitter-perl/tar.gz/567caa6fc6adbe19977bc6c21fd31275fc54d810
@@ -454,8 +454,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0
       tree-sitter-proto:
-        specifier: git+https://github.com/coder3101/tree-sitter-proto.git#d65a18ce7c2242801f702770114ad08056c7f8c9
-        version: https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/d65a18ce7c2242801f702770114ad08056c7f8c9
+        specifier: git+https://github.com/coder3101/tree-sitter-proto.git#cf8e4eba6e5b4afb9eb16c9178bba3d2504b46c2
+        version: https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/cf8e4eba6e5b4afb9eb16c9178bba3d2504b46c2
       tree-sitter-python:
         specifier: ^0.25.0
         version: 0.25.0
@@ -546,8 +546,8 @@ packages:
       tree_sitter:
         optional: true
 
-  '@acristoffers/tree-sitter-matlab@https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/c2390a59016f74e7d5f75ef09510768b4f30217e':
-    resolution: {gitHosted: true, integrity: sha512-Q6PXKDiVFXntcpiWN2uz8m+JuI03Kn4/2AmE5Iit6VAfZ5IN1EkzSgyQ3CWKHYpmz2zCRKhnMeZNzFHYhO3S/A==, tarball: https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/c2390a59016f74e7d5f75ef09510768b4f30217e}
+  '@acristoffers/tree-sitter-matlab@https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/c9ef947ec67fb6b500d5def4f5e09b56990a9f91':
+    resolution: {gitHosted: true, integrity: sha512-Eg9L6ZpoZGWIaajFIu0zlZ5OyH+WR7bedAK9o5GSz3BYFC1ikZ5nygagTmnjBYWVffaR7s3GBlE1xN8CfTxXyA==, tarball: https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/c9ef947ec67fb6b500d5def4f5e09b56990a9f91}
     version: 1.3.0
     peerDependencies:
       tree-sitter: ^0.21.1
@@ -1307,8 +1307,8 @@ packages:
       tree-sitter:
         optional: true
 
-  tree-sitter-cairo@https://codeload.github.com/starkware-libs/tree-sitter-cairo/tar.gz/8dcd77dbe7f68b2cc661031dff224dfc17bdbaf4:
-    resolution: {gitHosted: true, integrity: sha512-3Y3z68iLXnvZ1ZKHVmQ55I0ALeYfhkfCqwaTTdbBhywpTaf3K31an2JTZipLkijFpOGOW/aaQB9xClIwEhFJrw==, tarball: https://codeload.github.com/starkware-libs/tree-sitter-cairo/tar.gz/8dcd77dbe7f68b2cc661031dff224dfc17bdbaf4}
+  tree-sitter-cairo@https://codeload.github.com/starkware-libs/tree-sitter-cairo/tar.gz/b04ffb8c10a1a9faaea71a6757753fed4e1fcbfb:
+    resolution: {gitHosted: true, integrity: sha512-HNL6YMMmqPSAk7Nu7Aaw3XhhFd4s2o7SuX1ye9qx2jSTKlM3b4NEjtOFc9B4lL5NMR1L1Czsl0WDsyu2wwoW4A==, tarball: https://codeload.github.com/starkware-libs/tree-sitter-cairo/tar.gz/b04ffb8c10a1a9faaea71a6757753fed4e1fcbfb}
     version: 0.0.1
     peerDependencies:
       tree-sitter: ^0.21.0
@@ -1390,8 +1390,8 @@ packages:
       tree-sitter:
         optional: true
 
-  tree-sitter-d@https://codeload.github.com/gdamore/tree-sitter-d/tar.gz/8bcb13dbddf16ca44a42f8e98e8cf3d86b2b2e48:
-    resolution: {gitHosted: true, integrity: sha512-i1ffBibJq+8oQsvBFTWnPVJlbuXLR8At9t+MVAAiEQRIixs9y7Uu0lqYmpQXcTzr1fFwa2OCXEKJ6CyvWSLjFQ==, tarball: https://codeload.github.com/gdamore/tree-sitter-d/tar.gz/8bcb13dbddf16ca44a42f8e98e8cf3d86b2b2e48}
+  tree-sitter-d@https://codeload.github.com/gdamore/tree-sitter-d/tar.gz/64f27931b4e6fdd75af1102c79bacbca68a8dacc:
+    resolution: {gitHosted: true, integrity: sha512-jp81yzBLe5+vDzq/3yJlEJO1fAGZ1RBq+NQJa5HvyxJHkeLeXoiUkDd2PMfMexfIyBVG3P4IDOWoEp/t3eaFnQ==, tarball: https://codeload.github.com/gdamore/tree-sitter-d/tar.gz/64f27931b4e6fdd75af1102c79bacbca68a8dacc}
     version: 0.8.2
     peerDependencies:
       tree-sitter: ^0.21.0
@@ -1717,8 +1717,8 @@ packages:
       tree_sitter:
         optional: true
 
-  tree-sitter-nix@https://codeload.github.com/nix-community/tree-sitter-nix/tar.gz/69fbfb02896cdd27cb7ff3cd61f7f3f6bde4f017:
-    resolution: {gitHosted: true, integrity: sha512-VVE1god+tTxmTd4ewW7FVJy6k1vbFCfQL3UMG6ZUe7Y8df7Et4g4xIGG8F3XvAk3RPRqX9ZbOrKzH9yb9F9dpg==, tarball: https://codeload.github.com/nix-community/tree-sitter-nix/tar.gz/69fbfb02896cdd27cb7ff3cd61f7f3f6bde4f017}
+  tree-sitter-nix@https://codeload.github.com/nix-community/tree-sitter-nix/tar.gz/3d0173d903e630b6e14d17f1cf79488791379ded:
+    resolution: {gitHosted: true, integrity: sha512-6lRgc+xEGhISl24ypKojFPe43vdifNpGwyHibO7gqJa+60EEEuB5Xa5NwFlZAriZIYsRkxtp3gnHh4o1Ot6fFA==, tarball: https://codeload.github.com/nix-community/tree-sitter-nix/tar.gz/3d0173d903e630b6e14d17f1cf79488791379ded}
     version: 0.3.0
 
   tree-sitter-objc@3.0.2:
@@ -1729,8 +1729,8 @@ packages:
       tree-sitter:
         optional: true
 
-  tree-sitter-ocaml@https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/59e2b9f63526db8b95cf59dde6b2402ec2e48b52:
-    resolution: {gitHosted: true, integrity: sha512-WEnXpQHgqHO5S81J7T4DzaZq63Tw5HGA5zyWyOflxI0pi9pznD1cFGdrZvjJjsq0iztY055w6BAmVfuzuQ9mFg==, tarball: https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/59e2b9f63526db8b95cf59dde6b2402ec2e48b52}
+  tree-sitter-ocaml@https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/527d62ef0f24ce0d97fbedf004921d75d0a7e086:
+    resolution: {gitHosted: true, integrity: sha512-1HQ684LTcadpIVMhOOZVexx4TYsTwBG7Kz4yD/heUKftGL/rLOAL0dogmysxI7avlNAh/VGeGxjQA0PzcQEhYw==, tarball: https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/527d62ef0f24ce0d97fbedf004921d75d0a7e086}
     version: 0.25.0
     peerDependencies:
       tree-sitter: ^0.25.0
@@ -1772,8 +1772,8 @@ packages:
       tree-sitter:
         optional: true
 
-  tree-sitter-proto@https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/d65a18ce7c2242801f702770114ad08056c7f8c9:
-    resolution: {gitHosted: true, integrity: sha512-eWHH1ZOTp9P3vzm6LJB6SYUhPwgzcJrCT6TV7Xo8Lj5Asxoa7kalPQJ6Kc4e/KLrkwhlzY7x2VH7RTysiCdxyQ==, tarball: https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/d65a18ce7c2242801f702770114ad08056c7f8c9}
+  tree-sitter-proto@https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/cf8e4eba6e5b4afb9eb16c9178bba3d2504b46c2:
+    resolution: {gitHosted: true, integrity: sha512-tMnJNkDiqqyGRcgCo5V3bwzKpMcCyva9JHOLSv4OU80SK2CZCduw1wRPXAG9q0WN2rOGN+fySAZ/zGNiMqepjg==, tarball: https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/cf8e4eba6e5b4afb9eb16c9178bba3d2504b46c2}
     version: 0.4.0
     peerDependencies:
       tree-sitter: ^0.21.1
@@ -2031,7 +2031,7 @@ snapshots:
       node-addon-api: 8.8.0
       node-gyp-build: 4.8.4
 
-  '@acristoffers/tree-sitter-matlab@https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/c2390a59016f74e7d5f75ef09510768b4f30217e':
+  '@acristoffers/tree-sitter-matlab@https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/c9ef947ec67fb6b500d5def4f5e09b56990a9f91':
     dependencies:
       node-addon-api: 8.8.0
       node-gyp-build: 4.8.4
@@ -2766,7 +2766,7 @@ snapshots:
       node-addon-api: 8.8.0
       node-gyp-build: 4.8.4
 
-  tree-sitter-cairo@https://codeload.github.com/starkware-libs/tree-sitter-cairo/tar.gz/8dcd77dbe7f68b2cc661031dff224dfc17bdbaf4:
+  tree-sitter-cairo@https://codeload.github.com/starkware-libs/tree-sitter-cairo/tar.gz/b04ffb8c10a1a9faaea71a6757753fed4e1fcbfb:
     dependencies:
       node-addon-api: 7.1.1
       node-gyp-build: 4.8.4
@@ -2818,7 +2818,7 @@ snapshots:
       tree-sitter-c: 0.24.1
       tree-sitter-cpp: 0.23.4
 
-  tree-sitter-d@https://codeload.github.com/gdamore/tree-sitter-d/tar.gz/8bcb13dbddf16ca44a42f8e98e8cf3d86b2b2e48:
+  tree-sitter-d@https://codeload.github.com/gdamore/tree-sitter-d/tar.gz/64f27931b4e6fdd75af1102c79bacbca68a8dacc:
     dependencies:
       node-addon-api: 7.1.1
       node-gyp-build: 4.8.4
@@ -3020,7 +3020,7 @@ snapshots:
     dependencies:
       node-gyp-build: 4.8.4
 
-  tree-sitter-nix@https://codeload.github.com/nix-community/tree-sitter-nix/tar.gz/69fbfb02896cdd27cb7ff3cd61f7f3f6bde4f017:
+  tree-sitter-nix@https://codeload.github.com/nix-community/tree-sitter-nix/tar.gz/3d0173d903e630b6e14d17f1cf79488791379ded:
     dependencies:
       nan: 2.27.0
 
@@ -3030,7 +3030,7 @@ snapshots:
       node-gyp-build: 4.8.4
       tree-sitter-c: 0.23.6
 
-  tree-sitter-ocaml@https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/59e2b9f63526db8b95cf59dde6b2402ec2e48b52:
+  tree-sitter-ocaml@https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/527d62ef0f24ce0d97fbedf004921d75d0a7e086:
     dependencies:
       node-addon-api: 8.8.0
       node-gyp-build: 4.8.4
@@ -3055,7 +3055,7 @@ snapshots:
       node-addon-api: 8.8.0
       node-gyp-build: 4.8.4
 
-  tree-sitter-proto@https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/d65a18ce7c2242801f702770114ad08056c7f8c9:
+  tree-sitter-proto@https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/cf8e4eba6e5b4afb9eb16c9178bba3d2504b46c2:
     dependencies:
       node-addon-api: 8.8.0
       node-gyp-build: 4.8.4
