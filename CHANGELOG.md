@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.4] - 2026-08-11
+### :wrench: Chores
+- [`046cf66`](https://github.com/Crysthamus/tree-sitter-wasm/commit/046cf669c081cda4456d8618325ad9ad6446bc08) - update parsers *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+
+
 ## [v1.1.3] - 2026-07-24
 ### :wrench: Chores
 - [`1d51b9a`](https://github.com/Crysthamus/tree-sitter-wasm/commit/1d51b9ab39a4fb8ef0cb12ed2e53072f110ad19c) - **cmake, dart, desktop, diff, editorconfig, gleam, nim, query, ssh-config, systemverilog, and templ**: update parsers *(commit by [@Crysthamus](https://github.com/Crysthamus))*
@@ -86,3 +91,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.1.1]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.0...v1.1.1
 [v1.1.2]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.1...v1.1.2
 [v1.1.3]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.2...v1.1.3
+[v1.1.4]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.3...v1.1.4
