@@ -41,13 +41,7 @@
 		"build": "node build.js",
 		"test": "echo \"WASM binaries verified during build.\" && exit 0"
 	},
-	"devEngines": {
-		"packageManager": {
-			"name": "pnpm",
-			"version": "^11.1.2",
-			"onFail": "download"
-		}
-	},
+  "packageManager": "pnpm@11.22.0",
 	"devDependencies": {
 		"@6cdh/tree-sitter-racket": "0.24.7-1",
 		"@6cdh/tree-sitter-scheme": "0.24.7-1",
