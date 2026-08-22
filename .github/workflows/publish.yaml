@@ -29,7 +29,7 @@ jobs:
           fetch-depth: 0
 
       - name: Free Runner Space
-        uses: justinthelaw/maximize-github-runner-space@6324f43808f0fd33e16ee8a0141fca09974b38e0
+        uses: justinthelaw/maximize-github-runner-space@ab8cbab7abef3d8a2565cc7827c22ffd462202be
         with:
           skip-components: cached-node, cached-python
           swapfile-size: 50G
