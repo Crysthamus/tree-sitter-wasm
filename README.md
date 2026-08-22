@@ -1,8 +1,8 @@
 # tree-sitter-wasm [![npm version](https://img.shields.io/npm/v/tree-sitter-wasm.svg?style=flat-square)](https://www.npmjs.com/package/tree-sitter-wasm)
-Prebuilt WASM binaries and query files(`.scm`) for tree-sitter's language parsers.
+Prebuilt WASM binaries and query files(`.scm`) for tree-sitter's language parsers that work with Node and bundlers like Vite.
 You can find a list of supported languages [here](https://app.unpkg.com/tree-sitter-wasm/files/out)
 
-## Table of Content
+## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * **[Security](#security)**
@@ -23,7 +23,7 @@ bun install tree-sitter-wasm
 ## Usage
 A type-safe API is provided for accessing grammars and queries at runtime
 ```typescript
-import { getWasmPath, getQueryPath } from "tree-sitter-wasm";
+import { getAvailableQueries, getWasmPath, getQueryPath } from "tree-sitter-wasm";
 
 const wasmPath = getWasmPath("python");
 const queryPath = getQueryPath("python", "highlights");
@@ -63,23 +63,23 @@ python/
 ```
 
 ## Security
-This project takes security seriously (a lot more so than other sources), all WASMs are compiled and distributed through github actions with strict guardrails to prevent
+This project takes security seriously (a lot more so than other sources), all WASMs are compiled and distributed through Github actions with strict guardrails to prevent
 malicious code injection and tampered artifacts.
 You can read about wasm security features [here](https://webassembly.org/docs/security/)
 
 ### Build Security
 * Pinned Dependencies: All upstream grammar repositories are pinned to explicit, immutable git commit hashes.
-* Delayed Updates: A parser is only updated after atleast 7 days have passed from the date of commit.
+* Delayed Updates: A parser is only updated after at least 7 days have passed from the date of commit.
 * Manual Review: Before any commit is bumped, the diffs are manually checked by me and run on a VM.
 * Isolated CI: All binaries are compiled strictly within ephemeral, isolated Github action runner.
 
 ### Cryptography
-* Cosign Signage: All compiled `.wasm` blobs are individually cryptographically signed using [cosign](https://github.com/sigstore/cosign).
+* Cosign Signing: All compiled `.wasm` blobs are individually cryptographically signed using [cosign](https://github.com/sigstore/cosign).
 * Github Provenance: All artifacts published to npm are done with provenance.
 * SLSA 3: Releases are published with SLSA level 3.
 
 ### Verifications of binaries
-To verify the integrity of a `.wasm` file fetched from this package, you can verify its signature against the github workflow.
+To verify the integrity of a `.wasm` file fetched from this package, you can verify its signature against the Github workflow.
 
 #### Verifying the entire archive (GitHub CLI)
 If you downloaded the release tarball, you can verify its SLSA provenance attestation:
@@ -98,7 +98,7 @@ cosign verify-blob \
 ```
 
 ## Licenses
-The licenses for the generated .wasm and .scm files belong to their respective upstream grammar authors and can be found on their github repos.
+The licenses for the generated .wasm and .scm files belong to their respective upstream grammar authors and can be found on their Github repos.
 
 The code in this repository is licensed under MIT.
 If you maintain an upstream grammar and have a problem with this licensing, please open an issue.
