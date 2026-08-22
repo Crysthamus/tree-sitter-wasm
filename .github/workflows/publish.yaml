@@ -198,7 +198,7 @@ jobs:
           tar -czf build.tar.gz -C staging .
 
       - name: Attest Build Provenance
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v4
         with:
           subject-path: |
             build.tar.gz
