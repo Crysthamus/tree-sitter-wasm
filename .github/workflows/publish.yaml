@@ -54,7 +54,7 @@ jobs:
 
       - name: Cache WASI SDK
         id: cache-wasi
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ~/.cache/tree-sitter/wasi-sdk
           key: wasi-sdk-29-${{ runner.os }}
@@ -85,7 +85,7 @@ jobs:
 
       - name: Cache Built WASMs
         id: cache-out
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: |
             out
