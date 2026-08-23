@@ -461,7 +461,7 @@ importers:
         version: 0.25.0
       tree-sitter-qmljs:
         specifier: ^0.3.0
-        version: 0.3.0
+        version: 0.3.1
       tree-sitter-query:
         specifier: git+https://github.com/tree-sitter-grammars/tree-sitter-query.git#8e9e223812ff30854fbc912adbec696ba5f0e023
         version: https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/8e9e223812ff30854fbc912adbec696ba5f0e023
@@ -1035,6 +1035,10 @@ packages:
 
   node-addon-api@8.9.0:
     resolution: {integrity: sha512-ekZMeaaIzSQTSpr7X2X3iJM7lTzgnx8ahAG9pJfT/7+14mlEM8ZYQ9cgCDvSSRbReFK0oHli3WrZdCiRsgAT9Q==}
+    engines: {node: ^18 || ^20 || >= 21}
+
+  node-addon-api@8.9.2:
+    resolution: {integrity: sha512-VijLXbi3UACN69I0JVXJsX4tjACjNoQDgv2gTF6sx2wWEi8tkSg2eX8p5gSIFi8z2+DL3oHmY6OyKce38SDolg==}
     engines: {node: ^18 || ^20 || >= 21}
 
   node-gyp-build@4.8.4:
@@ -1798,8 +1802,8 @@ packages:
       tree-sitter:
         optional: true
 
-  tree-sitter-qmljs@0.3.0:
-    resolution: {integrity: sha512-8muyyhWflxX+nNBfXTjBnvAKCrmo6sODm9s7pONKOk4ljnf+6J3p6RAQB1pGn09rWvRtqVSgB37FslUdvtth+w==}
+  tree-sitter-qmljs@0.3.1:
+    resolution: {integrity: sha512-A7FGIqs6YNqF5Y5shwzmiDlKGwjIAPK7HWt0Z4bVa1gMeh4glAoPHr/Mu7lDLpQHzxHp7osdv+HjP1RSMQpoKg==}
     peerDependencies:
       tree-sitter: ^0.21.0
       tree_sitter: '*'
@@ -2525,6 +2529,8 @@ snapshots:
 
   node-addon-api@8.9.0: {}
 
+  node-addon-api@8.9.2: {}
+
   node-gyp-build@4.8.4: {}
 
   node-gyp@11.5.0:
@@ -3078,9 +3084,9 @@ snapshots:
       node-addon-api: 8.8.0
       node-gyp-build: 4.8.4
 
-  tree-sitter-qmljs@0.3.0:
+  tree-sitter-qmljs@0.3.1:
     dependencies:
-      node-addon-api: 8.8.0
+      node-addon-api: 8.9.2
       node-gyp-build: 4.8.4
 
   tree-sitter-query@https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/8e9e223812ff30854fbc912adbec696ba5f0e023:
