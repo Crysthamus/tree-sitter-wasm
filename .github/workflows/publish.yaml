@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       force_rebuild:
-        description: 'Force a complete rebuild of all WASMs, ignoring cache'
+        description: "Force a complete rebuild of all WASMs, ignoring cache"
         required: false
         type: boolean
         default: false
@@ -15,7 +15,46 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
+  prepare-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup pnpm and Cache
+        uses: pnpm/setup@v2
+        with:
+          cache: true
+
+      - name: Setup and cache Emscripten
+        uses: emscripten-core/setup-emsdk@0822153d7a5488b70a269cfa0a631b2a86ab4da2
+        with:
+          version: 5.0.1
+          actions-cache-folder: "emsdk-cache"
+
+      - name: Cache WASI SDK
+        id: cache-wasi
+        uses: actions/cache@v6
+        with:
+          path: ~/.cache/tree-sitter/wasi-sdk
+          key: wasi-sdk-29-${{ runner.os }}
+
+      - name: Download WASI SDK (if not cached)
+        if: steps.cache-wasi.outputs.cache-hit != 'true'
+        run: |
+          WASI_VERSION=29
+          CACHE_DIR="$HOME/.cache/tree-sitter"
+          SDK_DIR="$CACHE_DIR/wasi-sdk"
+          mkdir -p "$CACHE_DIR"
+
+          echo "Cache miss: Downloading WASI SDK..."
+          curl -LO "https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-${WASI_VERSION}/wasi-sdk-${WASI_VERSION}.0-x86_64-linux.tar.gz"
+          mkdir -p "$SDK_DIR"
+          tar -xzf "wasi-sdk-${WASI_VERSION}.0-x86_64-linux.tar.gz" --strip-components=1 -C "$SDK_DIR"
+          rm "wasi-sdk-${WASI_VERSION}.0-x86_64-linux.tar.gz"
+
   build:
+    needs: prepare-cache # Forces the matrix to wait until caches are seeded
     runs-on: ubuntu-latest
     strategy:
       fail-fast: true
@@ -34,54 +73,29 @@ jobs:
           skip-components: cached-node, cached-python
           swapfile-size: 50G
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v6
+      - name: Setup pnpm, Node.js, and Install Dependencies
+        uses: pnpm/setup@v2
         with:
-          version: 11
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: "24"
-          cache: "pnpm"
-          registry-url: "https://registry.npmjs.org"
+          cache: true # This will now instantly hit the cache prepared above
 
       - name: Setup and cache Emscripten
         uses: emscripten-core/setup-emsdk@0822153d7a5488b70a269cfa0a631b2a86ab4da2
         with:
           version: 5.0.1
-          actions-cache-folder: 'emsdk-cache'
+          actions-cache-folder: "emsdk-cache" # Will also hit instantly
 
-      - name: Cache WASI SDK
-        id: cache-wasi
+      - name: Restore WASI SDK Cache
         uses: actions/cache@v6
         with:
           path: ~/.cache/tree-sitter/wasi-sdk
           key: wasi-sdk-29-${{ runner.os }}
 
-      - name: Install WASI SDK
+      - name: Configure WASI SDK Paths # Simplified since download happened in prep job
         run: |
-          WASI_VERSION=29
           CACHE_DIR="$HOME/.cache/tree-sitter"
           SDK_DIR="$CACHE_DIR/wasi-sdk"
-
-          mkdir -p "$CACHE_DIR"
-
-          if [ "${{ steps.cache-wasi.outputs.cache-hit }}" != 'true' ]; then
-            echo "Cache miss: Downloading WASI SDK..."
-            curl -LO "https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-${WASI_VERSION}/wasi-sdk-${WASI_VERSION}.0-x86_64-linux.tar.gz"
-            mkdir -p "$SDK_DIR"
-            tar -xzf "wasi-sdk-${WASI_VERSION}.0-x86_64-linux.tar.gz" --strip-components=1 -C "$SDK_DIR"
-            rm "wasi-sdk-${WASI_VERSION}.0-x86_64-linux.tar.gz"
-          else
-            echo "Cache hit: Using restored WASI SDK structure."
-          fi
-
           echo "$SDK_DIR/bin" >> $GITHUB_PATH
           echo "WASI_SDK_PATH=$SDK_DIR" >> $GITHUB_ENV
-
-      - name: Install Dependencies
-        run: pnpm install
 
       - name: Cache Built WASMs
         id: cache-out
@@ -140,7 +154,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           branch: main
-          commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }}'
+          commit_message: "docs: update CHANGELOG.md for ${{ github.ref_name }}"
           file_pattern: CHANGELOG.md
 
       - name: Update GitHub Release Description
@@ -151,20 +165,13 @@ jobs:
           body: ${{ steps.changelog.outputs.changes }}
           append_body: true
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v6
+      - name: Setup pnpm, Node.js, and Install Dependencies
+        uses: pnpm/setup@v2
         with:
-          version: 11
+          cache: true
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: "24"
-          cache: "pnpm"
-          registry-url: "https://registry.npmjs.org"
-
-      - name: Install Dependencies
-        run: pnpm install
+      - name: Configure NPM Registry Auth
+        run: pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
 
       - name: Download Build Artifacts
         uses: actions/download-artifact@v8
@@ -220,4 +227,3 @@ jobs:
           fi
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
