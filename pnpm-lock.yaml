@@ -245,7 +245,7 @@ importers:
         version: 1.1.2
       p-map:
         specifier: ^7.0.4
-        version: 7.0.4
+        version: 7.0.6
       tree-sitter-ada:
         specifier: git+https://github.com/briot/tree-sitter-ada.git#dd5fa4cdb3aba91abc687aa68fb1431396fce6a6
         version: https://codeload.github.com/briot/tree-sitter-ada/tar.gz/dd5fa4cdb3aba91abc687aa68fb1431396fce6a6
@@ -1073,8 +1073,8 @@ packages:
     resolution: {integrity: sha512-/bjOqmgETBYB5BoEeGVea8dmvHb2m9GLy1E9W43yeyfP6QQCZGFNa+XRceJEuDB6zqr+gKpIAmlLebMpykw/MQ==}
     engines: {node: '>=10'}
 
-  p-map@7.0.4:
-    resolution: {integrity: sha512-tkAQEw8ysMzmkhgw8k+1U/iPhWNhykKnSk4Rd5zLoPJCuJaGRPo6YposrZgaxHKzDHdDWWZvE/Sk7hsL2X/CpQ==}
+  p-map@7.0.6:
+    resolution: {integrity: sha512-I4Prw6ivkd6p8PiYR1tXASOAOBzIJwu0TB7fqaX0c/8c3QAehNYmX57EijyGGGBt3c/BIowGwV03RVBtXvHEVg==}
     engines: {node: '>=18'}
 
   package-json-from-dist@1.0.1:
@@ -2231,7 +2231,7 @@ snapshots:
       minipass-collect: 2.0.1
       minipass-flush: 1.0.7
       minipass-pipeline: 1.2.4
-      p-map: 7.0.4
+      p-map: 7.0.6
       ssri: 12.0.0
       tar: 7.5.16
       unique-filename: 4.0.0
@@ -2581,7 +2581,7 @@ snapshots:
     dependencies:
       aggregate-error: 3.1.0
 
-  p-map@7.0.4: {}
+  p-map@7.0.6: {}
 
   package-json-from-dist@1.0.1: {}
 
