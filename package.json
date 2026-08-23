@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-wasm",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Pre-built WebAssembly binaries and queries for tree-sitter grammars.",
   "keywords": [
     "incremental",
@@ -120,7 +120,7 @@
     "tree-sitter-objc": "^3.0.2",
     "tree-sitter-ocaml": "git+https://github.com/tree-sitter/tree-sitter-ocaml.git#b40028552b03e291ac43b59b51908d56effa597b",
     "tree-sitter-perl": "git+https://github.com/tree-sitter-perl/tree-sitter-perl.git#567caa6fc6adbe19977bc6c21fd31275fc54d810",
-    "tree-sitter-php": "^0.24.2",
+    "tree-sitter-php": "git+https://github.com/tree-sitter/tree-sitter-php.git#3fda2fb9577166c6399834917f9844f30370beea",
     "tree-sitter-powershell": "^0.26.4",
     "tree-sitter-prisma": "^1.6.0",
     "tree-sitter-proto": "git+https://github.com/coder3101/tree-sitter-proto.git#5a256fe3b6be3bd2ea4d03e1213d847c7093c2e1",

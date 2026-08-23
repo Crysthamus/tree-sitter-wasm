@@ -445,8 +445,8 @@ importers:
         specifier: git+https://github.com/tree-sitter-perl/tree-sitter-perl.git#567caa6fc6adbe19977bc6c21fd31275fc54d810
         version: https://codeload.github.com/tree-sitter-perl/tree-sitter-perl/tar.gz/567caa6fc6adbe19977bc6c21fd31275fc54d810
       tree-sitter-php:
-        specifier: ^0.24.2
-        version: 0.24.2
+        specifier: git+https://github.com/tree-sitter/tree-sitter-php.git#3fda2fb9577166c6399834917f9844f30370beea
+        version: https://codeload.github.com/tree-sitter/tree-sitter-php/tar.gz/3fda2fb9577166c6399834917f9844f30370beea
       tree-sitter-powershell:
         specifier: ^0.26.4
         version: 0.26.4
@@ -1756,8 +1756,9 @@ packages:
       tree-sitter:
         optional: true
 
-  tree-sitter-php@0.24.2:
-    resolution: {integrity: sha512-zwgAePc/HozNaWOOfwRAA+3p8yhuehRw8Fb7vn5qd2XjiIc93uJPryDTMYTSjBRjVIUg/KY6pM3rRzs8dSwKfw==}
+  tree-sitter-php@https://codeload.github.com/tree-sitter/tree-sitter-php/tar.gz/3fda2fb9577166c6399834917f9844f30370beea:
+    resolution: {gitHosted: true, integrity: sha512-DCy0mAE7OQl3yBkSbtIjb4DfU78HOFL1kj4xDy9bnwZFqL3hJkV+WG4T6yhkNNrgDlyGid7CMTQdbmXrYSqltA==, tarball: https://codeload.github.com/tree-sitter/tree-sitter-php/tar.gz/3fda2fb9577166c6399834917f9844f30370beea}
+    version: 0.24.2
     peerDependencies:
       tree-sitter: ^0.22.4
     peerDependenciesMeta:
@@ -2768,7 +2769,7 @@ snapshots:
 
   tree-sitter-c@0.23.6:
     dependencies:
-      node-addon-api: 8.8.0
+      node-addon-api: 8.9.0
       node-gyp-build: 4.8.4
 
   tree-sitter-c@0.24.1:
@@ -3052,9 +3053,9 @@ snapshots:
       node-addon-api: 8.8.0
       node-gyp-build: 4.8.4
 
-  tree-sitter-php@0.24.2:
+  tree-sitter-php@https://codeload.github.com/tree-sitter/tree-sitter-php/tar.gz/3fda2fb9577166c6399834917f9844f30370beea:
     dependencies:
-      node-addon-api: 8.8.0
+      node-addon-api: 8.9.0
       node-gyp-build: 4.8.4
 
   tree-sitter-powershell@0.26.4:
