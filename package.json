@@ -42,7 +42,7 @@
     "test": "echo \"WASM binaries verified during build.\" && exit 0"
   },
   "devDependencies": {
-    "@6cdh/tree-sitter-racket": "0.24.7-1",
+    "@6cdh/tree-sitter-racket": "0.25.0",
     "@6cdh/tree-sitter-scheme": "0.24.7-1",
     "@derekstride/tree-sitter-sql": "^0.3.11",
     "@eagleoutice/tree-sitter-r": "^1.1.2",

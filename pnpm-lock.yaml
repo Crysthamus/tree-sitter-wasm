@@ -211,8 +211,8 @@ importers:
   .:
     devDependencies:
       '@6cdh/tree-sitter-racket':
-        specifier: 0.24.7-1
-        version: 0.24.7-1
+        specifier: 0.25.0
+        version: 0.25.0
       '@6cdh/tree-sitter-scheme':
         specifier: 0.24.7-1
         version: 0.24.7-1
@@ -528,13 +528,12 @@ importers:
 
 packages:
 
-  '@6cdh/tree-sitter-racket@0.24.7-1':
-    resolution: {integrity: sha512-2nqPIBSrTByxzeFcFTWJ1rJ214dnBCr976NpMIAluX7HsKUrYhFCJyCn58V4/yMdQCZGLVuVPJuTeyvWYI5tgA==}
+  '@6cdh/tree-sitter-racket@0.25.0':
+    resolution: {integrity: sha512-VL3t6GLYrv2nX+BXjJTN2JSkS/ZgqZfKpNSOa1RuFFG1/kEnxTHQzObd2eKa/y9vPYKttK6NuSVmnN5EUCYw5w==}
     peerDependencies:
-      tree-sitter: ^0.21.1
-      tree_sitter: '*'
+      tree-sitter: ^0.25.0
     peerDependenciesMeta:
-      tree_sitter:
+      tree-sitter:
         optional: true
 
   '@6cdh/tree-sitter-scheme@0.24.7-1':
@@ -2030,9 +2029,9 @@ packages:
 
 snapshots:
 
-  '@6cdh/tree-sitter-racket@0.24.7-1':
+  '@6cdh/tree-sitter-racket@0.25.0':
     dependencies:
-      node-addon-api: 8.8.0
+      node-addon-api: 8.9.0
       node-gyp-build: 4.8.4
 
   '@6cdh/tree-sitter-scheme@0.24.7-1':
