@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-wasm",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Pre-built WebAssembly binaries and queries for tree-sitter grammars.",
   "keywords": [
     "incremental",
@@ -42,7 +42,7 @@
     "test": "echo \"WASM binaries verified during build.\" && exit 0"
   },
   "devDependencies": {
-    "@6cdh/tree-sitter-racket": "0.24.7-1",
+    "@6cdh/tree-sitter-racket": "0.25.0",
     "@6cdh/tree-sitter-scheme": "0.24.7-1",
     "@derekstride/tree-sitter-sql": "^0.3.11",
     "@eagleoutice/tree-sitter-r": "^1.1.2",
@@ -53,7 +53,7 @@
     "@tree-sitter-grammars/tree-sitter-toml": "^0.7.0",
     "@tree-sitter-grammars/tree-sitter-xml": "^0.7.0",
     "@tree-sitter-grammars/tree-sitter-zig": "^1.1.2",
-    "p-map": "^7.0.4",
+    "p-map": "^7.0.6",
     "tree-sitter-ada": "git+https://github.com/briot/tree-sitter-ada.git#dd5fa4cdb3aba91abc687aa68fb1431396fce6a6",
     "tree-sitter-angular": "^0.9.2",
     "tree-sitter-arduino": "^0.24.0",
@@ -65,7 +65,7 @@
     "tree-sitter-c": "^0.24.1",
     "tree-sitter-c-sharp": "^0.23.5",
     "tree-sitter-cairo": "git+https://github.com/starkware-libs/tree-sitter-cairo.git#638b096f276196e0e201970f39f665c2e4613b0d",
-    "tree-sitter-cli": "^0.26.8",
+    "tree-sitter-cli": "^0.27.0",
     "tree-sitter-clojure": "git+https://github.com/sogaiu/tree-sitter-clojure.git#e43eff80d17cf34852dcd92ca5e6986d23a7040f",
     "tree-sitter-cmake": "git+https://github.com/uyha/tree-sitter-cmake.git#ca627bb5828616b6246aafdc3c3222789e728e37",
     "tree-sitter-comment": "^0.3.0",
@@ -85,7 +85,7 @@
     "tree-sitter-elixir": "^0.3.5",
     "tree-sitter-embedded-template": "^0.25.0",
     "tree-sitter-erlang": "git+https://github.com/WhatsApp/tree-sitter-erlang.git#6ba4c762eb3065495e3db85697ffeecdf364ce35",
-    "tree-sitter-fish": "git+https://github.com/ram02z/tree-sitter-fish.git#f435b0bd772578c70e5d158b85267bb886316f88",
+    "tree-sitter-fish": "git+https://github.com/ram02z/tree-sitter-fish.git#b7f1d682941e0c62dfcd6bf9ef481638351bab16",
     "tree-sitter-fortran": "git+https://github.com/stadelmanma/tree-sitter-fortran.git#7edacd2b21aa80057d9725384a1304a1c758e0f8",
     "tree-sitter-gdscript": "^6.1.0",
     "tree-sitter-gdshader": "git+https://github.com/airblast-dev/tree-sitter-gdshader.git#68268631c8b6dc093985f1246b099f81b30ea7d1",
@@ -125,7 +125,7 @@
     "tree-sitter-prisma": "^1.6.0",
     "tree-sitter-proto": "git+https://github.com/coder3101/tree-sitter-proto.git#5a256fe3b6be3bd2ea4d03e1213d847c7093c2e1",
     "tree-sitter-python": "^0.25.0",
-    "tree-sitter-qmljs": "^0.3.0",
+    "tree-sitter-qmljs": "^0.3.1",
     "tree-sitter-query": "git+https://github.com/tree-sitter-grammars/tree-sitter-query.git#8e9e223812ff30854fbc912adbec696ba5f0e023",
     "tree-sitter-razor": "git+https://github.com/tris203/tree-sitter-razor.git#d4664e409caaea12f73c9525484e3cf88b1cf718",
     "tree-sitter-regex": "^0.25.0",
@@ -154,5 +154,5 @@
       "version": "24"
     }
   },
-  "packageManager": "pnpm@11.22.0"
+  "packageManager": "pnpm@11.25.0"
 }
