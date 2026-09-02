@@ -17,6 +17,8 @@ concurrency:
 jobs:
   prepare-cache:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
@@ -54,8 +56,10 @@ jobs:
           rm "wasi-sdk-${WASI_VERSION}.0-x86_64-linux.tar.gz"
 
   build:
-    needs: prepare-cache # Forces the matrix to wait until caches are seeded
+    needs: prepare-cache
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     strategy:
       fail-fast: true
       matrix:
@@ -76,13 +80,13 @@ jobs:
       - name: Setup pnpm, Node.js, and Install Dependencies
         uses: pnpm/setup@v2
         with:
-          cache: true # This will now instantly hit the cache prepared above
+          cache: true
 
       - name: Setup and cache Emscripten
         uses: emscripten-core/setup-emsdk@0822153d7a5488b70a269cfa0a631b2a86ab4da2
         with:
           version: 5.0.1
-          actions-cache-folder: "emsdk-cache" # Will also hit instantly
+          actions-cache-folder: "emsdk-cache"
 
       - name: Restore WASI SDK Cache
         uses: actions/cache@v6
@@ -90,7 +94,7 @@ jobs:
           path: ~/.cache/tree-sitter/wasi-sdk
           key: wasi-sdk-29-${{ runner.os }}
 
-      - name: Configure WASI SDK Paths # Simplified since download happened in prep job
+      - name: Configure WASI SDK Paths
         run: |
           CACHE_DIR="$HOME/.cache/tree-sitter"
           SDK_DIR="$CACHE_DIR/wasi-sdk"
@@ -170,9 +174,6 @@ jobs:
         with:
           cache: true
 
-      - name: Configure NPM Registry Auth
-        run: pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
-
       - name: Download Build Artifacts
         uses: actions/download-artifact@v8
         with:
@@ -221,9 +222,7 @@ jobs:
       - name: Publish to NPM
         run: |
           if pnpm view $(node -p "require('./package.json').name")@$(node -p "require('./package.json').version") > /dev/null 2>&1; then
-            echo "Version already published to NPM. Skipping deployment."
+            echo "Its already there on npm (You probably forgot to bump the version again bruh)."
           else
             pnpm publish --no-git-checks --provenance
           fi
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
