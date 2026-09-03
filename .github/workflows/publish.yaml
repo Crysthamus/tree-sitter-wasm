@@ -23,7 +23,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Setup pnpm and Cache
+      - name: Setup Pnpm
         uses: pnpm/setup@v2
         with:
           cache: true
@@ -77,12 +77,12 @@ jobs:
           skip-components: cached-node, cached-python
           swapfile-size: 50G
 
-      - name: Setup pnpm, Node.js, and Install Dependencies
+      - name: Setup Pnpm
         uses: pnpm/setup@v2
         with:
           cache: true
 
-      - name: Setup and cache Emscripten
+      - name: Setup Emscripten
         uses: emscripten-core/setup-emsdk@0822153d7a5488b70a269cfa0a631b2a86ab4da2
         with:
           version: 5.0.1
@@ -94,7 +94,7 @@ jobs:
           path: ~/.cache/tree-sitter/wasi-sdk
           key: wasi-sdk-29-${{ runner.os }}
 
-      - name: Configure WASI SDK Paths
+      - name: Configure WASI SDK
         run: |
           CACHE_DIR="$HOME/.cache/tree-sitter"
           SDK_DIR="$CACHE_DIR/wasi-sdk"
@@ -112,7 +112,7 @@ jobs:
           restore-keys: |
             wasm-build-${{ runner.os }}-shard-${{ matrix.shard }}-
 
-      - name: Install Binaryen (wasm-opt)
+      - name: Install Binaryen
         run: sudo apt-get update && sudo apt-get install -y binaryen
 
       - name: Build WASMs
@@ -146,35 +146,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Generate Changelog from Conventional Commits
-        if: github.event_name == 'release'
-        id: changelog
-        uses: requarks/changelog-action@v1
-        with:
-          token: ${{ github.token }}
-          tag: ${{ github.ref_name }}
-
-      - name: Commit CHANGELOG.md
-        uses: stefanzweifel/git-auto-commit-action@v7
-        with:
-          branch: main
-          commit_message: "docs: update CHANGELOG.md for ${{ github.ref_name }}"
-          file_pattern: CHANGELOG.md
-
-      - name: Update GitHub Release Description
-        if: github.event_name == 'release'
-        uses: softprops/action-gh-release@v3
-        with:
-          tag_name: ${{ github.ref_name }}
-          body: ${{ steps.changelog.outputs.changes }}
-          append_body: true
-
-      - name: Setup pnpm, Node.js, and Install Dependencies
+      - name: Setup pnpm
         uses: pnpm/setup@v2
         with:
           cache: true
 
-      - name: Download Build Artifacts
+      - name: Download Artifacts
         uses: actions/download-artifact@v8
         with:
           pattern: out-shard-*
@@ -212,7 +189,7 @@ jobs:
             build.tar.gz
             staging/**/*.wasm
 
-      - name: Upload Artifact to GitHub Release
+      - name: Upload Artifact
         if: github.event_name == 'release'
         env:
           GH_TOKEN: ${{ github.token }}
@@ -226,3 +203,26 @@ jobs:
           else
             pnpm publish --no-git-checks --provenance
           fi
+
+      - name: Generate Changelog
+        if: github.event_name == 'release'
+        id: changelog
+        uses: requarks/changelog-action@v1
+        with:
+          token: ${{ github.token }}
+          tag: ${{ github.ref_name }}
+
+      - name: Commit CHANGELOG.md
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          branch: main
+          commit_message: "docs: update CHANGELOG.md for ${{ github.ref_name }}"
+          file_pattern: CHANGELOG.md
+
+      - name: Update GitHub Release Description
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ github.ref_name }}
+          body: ${{ steps.changelog.outputs.changes }}
+          append_body: true
