@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.7] - 2026-09-03
+### :wrench: Chores
+- [`c29528f`](https://github.com/Crysthamus/tree-sitter-wasm/commit/c29528fc9008d9137227db536e2da89e0a753aff) - update fish and racket *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+- [`b4b5863`](https://github.com/Crysthamus/tree-sitter-wasm/commit/b4b5863a55ff59c08b20604bca7ff981b686519e) - update workflow to use OIDC *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+- [`2dbb89c`](https://github.com/Crysthamus/tree-sitter-wasm/commit/2dbb89cd26a48287dcd97e4d21bfe0f63b54c570) - move changelog generation after publishing *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+
+
 ## [v1.1.6] - 2026-08-23
 ### :bug: Bug Fixes
 - [`10ceafc`](https://github.com/Crysthamus/tree-sitter-wasm/commit/10ceafc2240651aa51ca87627d3befc4813a2811) - **php**: resolve php crashes on `heredocs` and `enum consts` *(commit by [@Crysthamus](https://github.com/Crysthamus))*
@@ -115,3 +122,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.1.4]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.3...v1.1.4
 [v1.1.5]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.4...v1.1.5
 [v1.1.6]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.5...v1.1.6
+[v1.1.7]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.6...v1.1.7
