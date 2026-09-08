@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-wasm",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Pre-built WebAssembly binaries and queries for tree-sitter grammars.",
   "keywords": [
     "incremental",
@@ -130,6 +130,7 @@
     "tree-sitter-razor": "git+https://github.com/tris203/tree-sitter-razor.git#d4664e409caaea12f73c9525484e3cf88b1cf718",
     "tree-sitter-regex": "^0.25.0",
     "tree-sitter-requirements": "^0.6.1",
+    "tree-sitter-rescript": "git+https://github.com/rescript-lang/tree-sitter-rescript.git#19ed8a8e6bcc844b71c37e9edaffc60c77f74d7c",
     "tree-sitter-ruby": "^0.23.1",
     "tree-sitter-rust": "^0.24.0",
     "tree-sitter-scala": "^0.24.0",

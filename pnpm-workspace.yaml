@@ -87,6 +87,7 @@ allowBuilds:
   tree-sitter-razor: false
   tree-sitter-regex: false
   tree-sitter-requirements: false
+  tree-sitter-rescript@https://codeload.github.com/rescript-lang/tree-sitter-rescript/tar.gz/19ed8a8e6bcc844b71c37e9edaffc60c77f74d7c: false
   tree-sitter-ruby: false
   tree-sitter-rust: false
   tree-sitter-scala: false

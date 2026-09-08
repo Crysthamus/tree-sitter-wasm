@@ -275,6 +275,9 @@ importers:
       tree-sitter-requirements:
         specifier: ^0.6.1
         version: 0.6.1
+      tree-sitter-rescript:
+        specifier: git+https://github.com/rescript-lang/tree-sitter-rescript.git#19ed8a8e6bcc844b71c37e9edaffc60c77f74d7c
+        version: https://codeload.github.com/rescript-lang/tree-sitter-rescript/tar.gz/19ed8a8e6bcc844b71c37e9edaffc60c77f74d7c
       tree-sitter-ruby:
         specifier: ^0.23.1
         version: 0.23.1
@@ -976,8 +979,8 @@ packages:
     resolution: {integrity: sha512-HehCEsotFqbPW9sJ8WVYB6UbmIMv7kUUORIF2Nncq4VQvBfNBLibW9YZR5dlYCSUhwcD628pRllm7n+E+YTzJw==}
     engines: {node: '>= 14'}
 
-  socks@2.8.9:
-    resolution: {integrity: sha512-LJhUYUvItdQ0LkJTmPeaEObWXAqFyfmP85x0tch/ez9cahmhlBBLbIqDFnvBnUJGagb0JbIQrkBs1wJ+yRYpEw==}
+  socks@2.8.10:
+    resolution: {integrity: sha512-e0VyvkVTwVYViNovRkZ9aodhxVlyoMn7eJhVUPxZ+eK9P/7CBkxvvsBOHqFPEH416726W8tLXXXjKwqgTErrCQ==}
     engines: {node: '>= 10.0.0', npm: '>= 3.0.0'}
 
   ssri@12.0.0:
@@ -1637,6 +1640,15 @@ packages:
     resolution: {integrity: sha512-Vnhq+L8A1qvTUEMpVAgH3pitLxXWZ07Ucx+yPzK8G9FvzgwSdOjgbn7kVyo2KRnc7P7pdHGUbvny2OGaln1yuQ==}
     peerDependencies:
       tree-sitter: ^0.25.0
+    peerDependenciesMeta:
+      tree-sitter:
+        optional: true
+
+  tree-sitter-rescript@https://codeload.github.com/rescript-lang/tree-sitter-rescript/tar.gz/19ed8a8e6bcc844b71c37e9edaffc60c77f74d7c:
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/rescript-lang/tree-sitter-rescript/tar.gz/19ed8a8e6bcc844b71c37e9edaffc60c77f74d7c}
+    version: 6.0.0
+    peerDependencies:
+      tree-sitter: ^0.21.1
     peerDependenciesMeta:
       tree-sitter:
         optional: true
@@ -2448,7 +2460,7 @@ snapshots:
     dependencies:
       agent-base: 6.0.2
       debug: 4.4.3
-      socks: 2.8.9
+      socks: 2.8.10
     transitivePeerDependencies:
       - supports-color
 
@@ -2456,11 +2468,11 @@ snapshots:
     dependencies:
       agent-base: 7.1.4
       debug: 4.4.3
-      socks: 2.8.9
+      socks: 2.8.10
     transitivePeerDependencies:
       - supports-color
 
-  socks@2.8.9:
+  socks@2.8.10:
     dependencies:
       ip-address: 10.7.0
       smart-buffer: 4.2.0
@@ -2903,6 +2915,12 @@ snapshots:
 
   tree-sitter-requirements@0.6.1:
     dependencies:
+      node-addon-api: 8.9.2
+      node-gyp-build: 4.8.4
+
+  tree-sitter-rescript@https://codeload.github.com/rescript-lang/tree-sitter-rescript/tar.gz/19ed8a8e6bcc844b71c37e9edaffc60c77f74d7c:
+    dependencies:
+      nan: 2.28.0
       node-addon-api: 8.9.2
       node-gyp-build: 4.8.4
 
