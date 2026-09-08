@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.8] - 2026-09-08
+### :sparkles: New Features
+- [`3e8712d`](https://github.com/Crysthamus/tree-sitter-wasm/commit/3e8712de584682bf4fe13ad3c76f66bdcd893079) - **rescript**: add rescript wasm *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+
+
 ## [v1.1.7] - 2026-09-03
 ### :wrench: Chores
 - [`c29528f`](https://github.com/Crysthamus/tree-sitter-wasm/commit/c29528fc9008d9137227db536e2da89e0a753aff) - update fish and racket *(commit by [@Crysthamus](https://github.com/Crysthamus))*
@@ -123,3 +128,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.1.5]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.4...v1.1.5
 [v1.1.6]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.5...v1.1.6
 [v1.1.7]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.6...v1.1.7
+[v1.1.8]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.7...v1.1.8
