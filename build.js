@@ -293,6 +293,11 @@ async function processSourceGrammar(grammarDirs, depPath, baseCleanName) {
 				: path.basename(grammarDir).replace(/^tree-sitter-/, "");
 
 		const langName = getLanguageName(baseCleanName, cleanFolderName);
+
+    if (langName == "php_only") {
+      continue;
+    }
+
 		const langOutDir = path.join(OUT_DIR, langName);
 
 		try {
