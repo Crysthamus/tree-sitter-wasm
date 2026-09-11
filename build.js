@@ -339,6 +339,7 @@ async function processSourceGrammar(grammarDirs, depPath, baseCleanName) {
 			console.error(
 				`Failed to compile grammar in ${grammarDir}: ${error.stderr || error.message.split("\n")[0]}`,
 			);
+      throw error;
 		}
 	}
 	return built;
@@ -459,11 +460,17 @@ async function main() {
 
 	deps = combinedDeps.filter((_, i) => i % SHARD_TOTAL === SHARD_INDEX);
 
-	const nestedResults = await pMap(
-		deps,
-		(dep) => processDependency(dep, allDeps[dep], cache),
-		{ concurrency: 3 },
-	);
+  const nestedResults = [];
+  if (deps.length > 0) {
+    nestedResults.push(await processDependency(deps[0], allDeps[deps[0]], cache));
+      
+    const rest = await pMap(
+        deps.slice(1),
+        (dep) => processDependency(dep, allDeps[dep], cache),
+        { concurrency: 3 },
+    );
+    nestedResults.push(...rest);
+  }
 
 	const flattenedResults = nestedResults.flat();
 	const successfulLanguages = new Set(flattenedResults.map((r) => r.langName));
