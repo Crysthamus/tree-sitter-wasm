@@ -34,22 +34,14 @@ jobs:
           version: 5.0.1
           actions-cache-folder: "emsdk-cache"
 
-      - name: Cache WASI SDK
-        id: cache-wasi
-        uses: actions/cache@v6
-        with:
-          path: ~/.cache/tree-sitter/wasi-sdk
-          key: wasi-sdk-29-${{ runner.os }}
-
-      - name: Download WASI SDK (if not cached)
-        if: steps.cache-wasi.outputs.cache-hit != 'true'
+      - name: Download WASI SDK
         run: |
-          WASI_VERSION=29
+          WASI_VERSION=34
           CACHE_DIR="$HOME/.cache/tree-sitter"
           SDK_DIR="$CACHE_DIR/wasi-sdk"
           mkdir -p "$CACHE_DIR"
 
-          echo "Cache miss: Downloading WASI SDK..."
+          echo "Downloading WASI SDK..."
           curl -LO "https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-${WASI_VERSION}/wasi-sdk-${WASI_VERSION}.0-x86_64-linux.tar.gz"
           mkdir -p "$SDK_DIR"
           tar -xzf "wasi-sdk-${WASI_VERSION}.0-x86_64-linux.tar.gz" --strip-components=1 -C "$SDK_DIR"
@@ -92,7 +84,7 @@ jobs:
         uses: actions/cache@v6
         with:
           path: ~/.cache/tree-sitter/wasi-sdk
-          key: wasi-sdk-29-${{ runner.os }}
+          key: wasi-sdk-34-${{ runner.os }}
 
       - name: Configure WASI SDK
         run: |
