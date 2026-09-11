@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-wasm",
-  "version": "1.1.8",
+  "version": "2.0.0",
   "description": "Pre-built WebAssembly binaries and queries for tree-sitter grammars.",
   "keywords": [
     "incremental",
@@ -97,7 +97,7 @@
     "tree-sitter-glsl": "^0.2.0",
     "tree-sitter-go": "^0.25.0",
     "tree-sitter-godot-resource": "^0.7.0",
-    "tree-sitter-graphql": "git+https://github.com/joowani/tree-sitter-graphql.git#43c7f575a26740c1fee85cf52bf5ac1bbd7226ce",
+    "tree-sitter-graphql": "git+https://github.com/joowani/tree-sitter-graphql.git#1abcd628084f2fd8b1e74081b5552acfd2c21cd6",
     "tree-sitter-groovy": "git+https://github.com/murtaza64/tree-sitter-groovy.git#deb0dcf8c4544f07564060f6e9b9f6e4b0bfc27d",
     "tree-sitter-haskell": "^0.23.1",
     "tree-sitter-html": "^0.23.2",
@@ -113,17 +113,17 @@
     "tree-sitter-latex": "git+https://github.com/latex-lsp/tree-sitter-latex.git#fa8df448fc2c0192a8c2f8cfc97de53cb2b4ecb9",
     "tree-sitter-liquid": "git+https://github.com/hankthetank27/tree-sitter-liquid.git#e45dbac8c5fa95b1f0e00e7e0c04bc8855823391",
     "tree-sitter-make": "git+https://github.com/tree-sitter-grammars/tree-sitter-make.git#70613f3d812cbabbd7f38d104d60a409c4008b43",
-    "tree-sitter-matlab": "git+https://github.com/acristoffers/tree-sitter-matlab.git#c9ef947ec67fb6b500d5def4f5e09b56990a9f91",
+    "tree-sitter-matlab": "git+https://github.com/acristoffers/tree-sitter-matlab.git#f03d0347acd8bb05d4edd8c845ac1718729e1fad",
     "tree-sitter-nginx": "^1.0.1",
     "tree-sitter-nim": "git+https://github.com/alaviss/tree-sitter-nim.git#ac72ba30d16edf0be021588a9301ede4accd6cf4",
     "tree-sitter-nix": "git+https://github.com/nix-community/tree-sitter-nix.git#3d0173d903e630b6e14d17f1cf79488791379ded",
     "tree-sitter-objc": "^3.0.2",
-    "tree-sitter-ocaml": "git+https://github.com/tree-sitter/tree-sitter-ocaml.git#b40028552b03e291ac43b59b51908d56effa597b",
+    "tree-sitter-ocaml": "git+https://github.com/tree-sitter/tree-sitter-ocaml.git#a4ce49a6c17e88e7ca8350cfb666749d9a5c6630",
     "tree-sitter-perl": "git+https://github.com/tree-sitter-perl/tree-sitter-perl.git#567caa6fc6adbe19977bc6c21fd31275fc54d810",
     "tree-sitter-php": "git+https://github.com/tree-sitter/tree-sitter-php.git#3fda2fb9577166c6399834917f9844f30370beea",
     "tree-sitter-powershell": "^0.26.4",
     "tree-sitter-prisma": "^1.6.0",
-    "tree-sitter-proto": "git+https://github.com/coder3101/tree-sitter-proto.git#5a256fe3b6be3bd2ea4d03e1213d847c7093c2e1",
+    "tree-sitter-proto": "git+https://github.com/coder3101/tree-sitter-proto.git#6c878d18628ebbff3474479d2fdd6d8ba1954c3e",
     "tree-sitter-python": "^0.25.0",
     "tree-sitter-qmljs": "^0.3.1",
     "tree-sitter-query": "git+https://github.com/tree-sitter-grammars/tree-sitter-query.git#8e9e223812ff30854fbc912adbec696ba5f0e023",
@@ -155,5 +155,5 @@
       "version": "24"
     }
   },
-  "packageManager": "pnpm@11.25.0"
+  "packageManager": "pnpm@12.3.4"
 }

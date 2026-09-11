@@ -1,3 +1,104 @@
+---
+lockfileVersion: '9.0'
+
+importers:
+
+  .:
+    configDependencies: {}
+    packageManagerDependencies:
+      pnpm:
+        specifier: 12.3.4
+        version: 12.3.4
+
+packages:
+
+  '@pnpm/exe.darwin-arm64@12.3.4':
+    resolution: {integrity: sha512-PAyUol8T1+/+ViOiXAt51ECA+QnfXCqz6foL4bW+LsoX0NcVd5XVEM2mRQu+LV4oc7uRz9zf9U0P+XFfuQeDAw==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@pnpm/exe.darwin-x64@12.3.4':
+    resolution: {integrity: sha512-fxP9JCk0Cdye+ePuj+GJJLMUMTqHGWRdb1dtv4How876uQ2ehxvenpgiYAir/ceO9PsYUZkFTtyZdx+rRu5QOA==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@pnpm/exe.linux-arm64-musl@12.3.4':
+    resolution: {integrity: sha512-FBOt0/7ye6O6q4AllVV5QMviB6qE6fqkeczV/+MDWQsmo+QJrlfsh6X7CpH/tClVpBZEyIbjpUoT8bNhCYBxEg==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@pnpm/exe.linux-arm64@12.3.4':
+    resolution: {integrity: sha512-t71AVA7LRqiKTyZ5xMYaZc2n5DfdpMbfokZuiIOXHBOM03ECnF0t4iYwaBDqJgVjlKYUOwaF/bRQajGNA4cJ4w==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@pnpm/exe.linux-x64-musl@12.3.4':
+    resolution: {integrity: sha512-RPmk7Jb/aYaFvL2iyDN/AtMY+hUEsue732WmXpcuQ9tBpMnGyA5py7Z3+e+qmQaJ0zY/4ni9jJiyPBQHujmv6w==}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@pnpm/exe.linux-x64@12.3.4':
+    resolution: {integrity: sha512-2ZqOlSPkfwX1h5cR+FPiWf8+F+2hZT/3TvhUK5sigHqwaQCIiq8R7CGxhndKs63JtcLi2a1Qpo+wX/EoyfjyJQ==}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@pnpm/exe.win32-arm64@12.3.4':
+    resolution: {integrity: sha512-ANyrHqyqco6SXBysUTRF74itDyyraea7IbFsKFdNXTjcFnfycTDx37EwuhdpPYFNSIh2JhUG4fByclsRfiHX7w==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@pnpm/exe.win32-x64@12.3.4':
+    resolution: {integrity: sha512-WH/KqBPY/hq2Tb7SgQltEZytimcjgKRaCRL/aM9CI0c67iKc5TVmHUhIiL3Ux9FB4bWn36i6XewUcScQI+zG8w==}
+    cpu: [x64]
+    os: [win32]
+
+  pnpm@12.3.4:
+    resolution: {integrity: sha512-lhqkH7B32joEpEHZ+OFevAyW2o73ELLrZ7+e58sGEOq9SPH9hfUc/+c4RnhfoPh8VqOocqHYk/hEZ0G1zORUVw==}
+    engines: {node: '>=18.*'}
+    hasBin: true
+
+snapshots:
+
+  '@pnpm/exe.darwin-arm64@12.3.4':
+    optional: true
+
+  '@pnpm/exe.darwin-x64@12.3.4':
+    optional: true
+
+  '@pnpm/exe.linux-arm64-musl@12.3.4':
+    optional: true
+
+  '@pnpm/exe.linux-arm64@12.3.4':
+    optional: true
+
+  '@pnpm/exe.linux-x64-musl@12.3.4':
+    optional: true
+
+  '@pnpm/exe.linux-x64@12.3.4':
+    optional: true
+
+  '@pnpm/exe.win32-arm64@12.3.4':
+    optional: true
+
+  '@pnpm/exe.win32-x64@12.3.4':
+    optional: true
+
+  pnpm@12.3.4:
+    optionalDependencies:
+      '@pnpm/exe.darwin-arm64': 12.3.4
+      '@pnpm/exe.darwin-x64': 12.3.4
+      '@pnpm/exe.linux-arm64': 12.3.4
+      '@pnpm/exe.linux-arm64-musl': 12.3.4
+      '@pnpm/exe.linux-x64': 12.3.4
+      '@pnpm/exe.linux-x64-musl': 12.3.4
+      '@pnpm/exe.win32-arm64': 12.3.4
+      '@pnpm/exe.win32-x64': 12.3.4
+
+---
 lockfileVersion: '9.0'
 
 settings:
@@ -177,8 +278,8 @@ importers:
         specifier: ^0.7.0
         version: 0.7.0
       tree-sitter-graphql:
-        specifier: git+https://github.com/joowani/tree-sitter-graphql.git#43c7f575a26740c1fee85cf52bf5ac1bbd7226ce
-        version: https://codeload.github.com/joowani/tree-sitter-graphql/tar.gz/43c7f575a26740c1fee85cf52bf5ac1bbd7226ce
+        specifier: git+https://github.com/joowani/tree-sitter-graphql.git#1abcd628084f2fd8b1e74081b5552acfd2c21cd6
+        version: https://codeload.github.com/joowani/tree-sitter-graphql/tar.gz/1abcd628084f2fd8b1e74081b5552acfd2c21cd6
       tree-sitter-groovy:
         specifier: git+https://github.com/murtaza64/tree-sitter-groovy.git#deb0dcf8c4544f07564060f6e9b9f6e4b0bfc27d
         version: '@murtaza64/tree-sitter-groovy@https://codeload.github.com/murtaza64/tree-sitter-groovy/tar.gz/deb0dcf8c4544f07564060f6e9b9f6e4b0bfc27d'
@@ -225,8 +326,8 @@ importers:
         specifier: git+https://github.com/tree-sitter-grammars/tree-sitter-make.git#70613f3d812cbabbd7f38d104d60a409c4008b43
         version: https://codeload.github.com/tree-sitter-grammars/tree-sitter-make/tar.gz/70613f3d812cbabbd7f38d104d60a409c4008b43
       tree-sitter-matlab:
-        specifier: git+https://github.com/acristoffers/tree-sitter-matlab.git#c9ef947ec67fb6b500d5def4f5e09b56990a9f91
-        version: '@acristoffers/tree-sitter-matlab@https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/c9ef947ec67fb6b500d5def4f5e09b56990a9f91'
+        specifier: git+https://github.com/acristoffers/tree-sitter-matlab.git#f03d0347acd8bb05d4edd8c845ac1718729e1fad
+        version: '@acristoffers/tree-sitter-matlab@https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/f03d0347acd8bb05d4edd8c845ac1718729e1fad'
       tree-sitter-nginx:
         specifier: ^1.0.1
         version: 1.0.1
@@ -240,8 +341,8 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2
       tree-sitter-ocaml:
-        specifier: git+https://github.com/tree-sitter/tree-sitter-ocaml.git#b40028552b03e291ac43b59b51908d56effa597b
-        version: https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/b40028552b03e291ac43b59b51908d56effa597b
+        specifier: git+https://github.com/tree-sitter/tree-sitter-ocaml.git#a4ce49a6c17e88e7ca8350cfb666749d9a5c6630
+        version: https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/a4ce49a6c17e88e7ca8350cfb666749d9a5c6630
       tree-sitter-perl:
         specifier: git+https://github.com/tree-sitter-perl/tree-sitter-perl.git#567caa6fc6adbe19977bc6c21fd31275fc54d810
         version: https://codeload.github.com/tree-sitter-perl/tree-sitter-perl/tar.gz/567caa6fc6adbe19977bc6c21fd31275fc54d810
@@ -255,8 +356,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0
       tree-sitter-proto:
-        specifier: git+https://github.com/coder3101/tree-sitter-proto.git#5a256fe3b6be3bd2ea4d03e1213d847c7093c2e1
-        version: https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/5a256fe3b6be3bd2ea4d03e1213d847c7093c2e1
+        specifier: git+https://github.com/coder3101/tree-sitter-proto.git#6c878d18628ebbff3474479d2fdd6d8ba1954c3e
+        version: https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/6c878d18628ebbff3474479d2fdd6d8ba1954c3e
       tree-sitter-python:
         specifier: ^0.25.0
         version: 0.25.0
@@ -349,9 +450,9 @@ packages:
       tree_sitter:
         optional: true
 
-  '@acristoffers/tree-sitter-matlab@https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/c9ef947ec67fb6b500d5def4f5e09b56990a9f91':
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/c9ef947ec67fb6b500d5def4f5e09b56990a9f91}
-    version: 1.3.0
+  '@acristoffers/tree-sitter-matlab@https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/f03d0347acd8bb05d4edd8c845ac1718729e1fad':
+    resolution: {gitHosted: true, integrity: sha512-64bz1SxcYYfklqwNn9XVvvnjpEERf8H16CWgbwsRLLkZgCqh9IolhuzLqDZmZnYxtpFlsurNFoLAcMGpn7VhJA==, tarball: https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/f03d0347acd8bb05d4edd8c845ac1718729e1fad}
+    version: 1.3.1
     peerDependencies:
       tree-sitter: ^0.21.1
     peerDependenciesMeta:
@@ -396,7 +497,7 @@ packages:
     engines: {node: '>=18.0.0'}
 
   '@murtaza64/tree-sitter-groovy@https://codeload.github.com/murtaza64/tree-sitter-groovy/tar.gz/deb0dcf8c4544f07564060f6e9b9f6e4b0bfc27d':
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/murtaza64/tree-sitter-groovy/tar.gz/deb0dcf8c4544f07564060f6e9b9f6e4b0bfc27d}
+    resolution: {gitHosted: true, integrity: sha512-Jwb0PgA8368SHQJxsJ/dg86uYmClbUABcpZaBj0s4shUGaZErAbTHL1NCTpj12yDFzJtO8FK0aaaUomD/NAIKQ==, tarball: https://codeload.github.com/murtaza64/tree-sitter-groovy/tar.gz/deb0dcf8c4544f07564060f6e9b9f6e4b0bfc27d}
     version: 0.0.1
     peerDependencies:
       tree-sitter: ^0.21.0
@@ -422,7 +523,7 @@ packages:
     deprecated: This functionality has been moved to @npmcli/fs
 
   '@pfoerster/tree-sitter-latex@https://codeload.github.com/latex-lsp/tree-sitter-latex/tar.gz/fa8df448fc2c0192a8c2f8cfc97de53cb2b4ecb9':
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/latex-lsp/tree-sitter-latex/tar.gz/fa8df448fc2c0192a8c2f8cfc97de53cb2b4ecb9}
+    resolution: {gitHosted: true, integrity: sha512-ysFr8ilAuXTkUfJOHhKvFJz5QhIeKk+E08isydTXh2P4XPKhlpEPG0ZuSJXlXdTaKcQak/xPOcM7LqtrwvCo7A==, tarball: https://codeload.github.com/latex-lsp/tree-sitter-latex/tar.gz/fa8df448fc2c0192a8c2f8cfc97de53cb2b4ecb9}
     version: 0.6.0
     peerDependencies:
       tree-sitter: ^0.21.0 || ^0.25.0
@@ -440,7 +541,7 @@ packages:
     engines: {node: '>= 6'}
 
   '@tree-sitter-grammars/tree-sitter-hcl@https://codeload.github.com/Crysthamus/tree-sitter-hcl/tar.gz/eaa20bc01e886864e128f1c60a06b41ca2f38ffc':
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/Crysthamus/tree-sitter-hcl/tar.gz/eaa20bc01e886864e128f1c60a06b41ca2f38ffc}
+    resolution: {gitHosted: true, integrity: sha512-Q42+u6Ilj3F0botOuR6Jwnl5lGstMi9n17LyUvrH1tTQCGjhMgm/cOpdhC1l/AG6rsYfUGEIZ7tx6LhjnOjuhA==, tarball: https://codeload.github.com/Crysthamus/tree-sitter-hcl/tar.gz/eaa20bc01e886864e128f1c60a06b41ca2f38ffc}
     version: 1.2.0
     peerDependencies:
       tree-sitter: ^0.25.0
@@ -457,7 +558,7 @@ packages:
         optional: true
 
   '@tree-sitter-grammars/tree-sitter-markdown@https://codeload.github.com/tree-sitter-grammars/tree-sitter-markdown/tar.gz/a0a00f817d02412bd92c54d316f164d827b57b5c':
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-markdown/tar.gz/a0a00f817d02412bd92c54d316f164d827b57b5c}
+    resolution: {gitHosted: true, integrity: sha512-20wAcslzS2zSrSwgjzQxHS125+ztG+7fi5Pb+KBkBFIpU01PjS8wBH6nesNnrKma4LIWxLll99rWpDYnkqVQXg==, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-markdown/tar.gz/a0a00f817d02412bd92c54d316f164d827b57b5c}
     version: 0.5.3
     peerDependencies:
       tree-sitter: ^0.21.1
@@ -484,7 +585,7 @@ packages:
         optional: true
 
   '@tree-sitter-grammars/tree-sitter-yaml@https://codeload.github.com/tree-sitter-grammars/tree-sitter-yaml/tar.gz/a1c4812a73ec5e089de8e441fdea3a921e8d5079':
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-yaml/tar.gz/a1c4812a73ec5e089de8e441fdea3a921e8d5079}
+    resolution: {gitHosted: true, integrity: sha512-YKIWmcLBa1KU6pBlOXc/SRpE8ZFFSyJ+bteEma50hGvdF5B0cdRAN6YammpZTmRnLRLvamwTErR1879LVX7KAQ==, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-yaml/tar.gz/a1c4812a73ec5e089de8e441fdea3a921e8d5079}
     version: 0.7.2
     peerDependencies:
       tree-sitter: ^0.22.4
@@ -1024,7 +1125,7 @@ packages:
     engines: {node: '>=12.0.0'}
 
   tree-sitter-ada@https://codeload.github.com/briot/tree-sitter-ada/tar.gz/dd5fa4cdb3aba91abc687aa68fb1431396fce6a6:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/briot/tree-sitter-ada/tar.gz/dd5fa4cdb3aba91abc687aa68fb1431396fce6a6}
+    resolution: {gitHosted: true, integrity: sha512-cSWPGLuy0lxp2D0Elige8zyaYfB5nByZnUc86dIN2/2Mq+eJJ8JF7LresO82ou5VmPbnZm1noh6zQu71gvTRuA==, tarball: https://codeload.github.com/briot/tree-sitter-ada/tar.gz/dd5fa4cdb3aba91abc687aa68fb1431396fce6a6}
     version: 0.1.0
     peerDependencies:
       tree-sitter: ^0.22.4
@@ -1050,7 +1151,7 @@ packages:
         optional: true
 
   tree-sitter-asm@https://codeload.github.com/RubixDev/tree-sitter-asm/tar.gz/839741fef4dab5128952334624905c82b40c7133:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/RubixDev/tree-sitter-asm/tar.gz/839741fef4dab5128952334624905c82b40c7133}
+    resolution: {gitHosted: true, integrity: sha512-LWM0sLdcNWgQfHcg8XpR8bLXVWL4nHPloCvWwYX90iQkIZDznYUfSIojZxj1R7ZUjpsc0euv/bL+1TCHe1f/Ig==, tarball: https://codeload.github.com/RubixDev/tree-sitter-asm/tar.gz/839741fef4dab5128952334624905c82b40c7133}
     version: 0.1.0
     peerDependencies:
       tree-sitter: ^0.22.6
@@ -1060,7 +1161,7 @@ packages:
         optional: true
 
   tree-sitter-astro@https://codeload.github.com/virchau13/tree-sitter-astro/tar.gz/213f6e6973d9b456c6e50e86f19f66877e7ef0ee:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/virchau13/tree-sitter-astro/tar.gz/213f6e6973d9b456c6e50e86f19f66877e7ef0ee}
+    resolution: {gitHosted: true, integrity: sha512-1BJdVuze2LxKQNYQVTijoJTyPySwYWEysEcB44VyPfg8sPvFupZyJwEVv2o1btDsApy6cMvlkUBkIWXDzha8Ug==, tarball: https://codeload.github.com/virchau13/tree-sitter-astro/tar.gz/213f6e6973d9b456c6e50e86f19f66877e7ef0ee}
     version: 0.0.1
 
   tree-sitter-awk@0.7.2:
@@ -1081,7 +1182,7 @@ packages:
         optional: true
 
   tree-sitter-bibtex@https://codeload.github.com/latex-lsp/tree-sitter-bibtex/tar.gz/8d04ed27b3bc7929f14b7df9236797dab9f3fa66:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/latex-lsp/tree-sitter-bibtex/tar.gz/8d04ed27b3bc7929f14b7df9236797dab9f3fa66}
+    resolution: {gitHosted: true, integrity: sha512-fzQQ41PybkSiaxNtSY6xNScNA37/5T2y+J9f1oi+masz/zjb3ZAJa0BwnOSqo906h2TdFLSMYXa8NybfXKbP2w==, tarball: https://codeload.github.com/latex-lsp/tree-sitter-bibtex/tar.gz/8d04ed27b3bc7929f14b7df9236797dab9f3fa66}
     version: 0.1.0
     peerDependencies:
       tree-sitter: ^0.22.4
@@ -1115,7 +1216,7 @@ packages:
         optional: true
 
   tree-sitter-cairo@https://codeload.github.com/starkware-libs/tree-sitter-cairo/tar.gz/638b096f276196e0e201970f39f665c2e4613b0d:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/starkware-libs/tree-sitter-cairo/tar.gz/638b096f276196e0e201970f39f665c2e4613b0d}
+    resolution: {gitHosted: true, integrity: sha512-H8xvstLrefRzAFGC1aaBiJpKVE6FVgz4tJyw/cW+Gb2BA92GV5zEeHyqRW87TAGl/cGolCOFakp7HJD3KlL/aw==, tarball: https://codeload.github.com/starkware-libs/tree-sitter-cairo/tar.gz/638b096f276196e0e201970f39f665c2e4613b0d}
     version: 0.0.1
     peerDependencies:
       tree-sitter: ^0.21.0
@@ -1140,11 +1241,11 @@ packages:
     hasBin: true
 
   tree-sitter-clojure@https://codeload.github.com/sogaiu/tree-sitter-clojure/tar.gz/e43eff80d17cf34852dcd92ca5e6986d23a7040f:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/sogaiu/tree-sitter-clojure/tar.gz/e43eff80d17cf34852dcd92ca5e6986d23a7040f}
+    resolution: {gitHosted: true, integrity: sha512-ipgvrDgCcHfPqSBrbuXOn6cllKik3zVh6oTYLrdRqir4uA0ubq3AYiDzJGJ7Vfg1UIgwL2G/5vMaNUMy4MpSpw==, tarball: https://codeload.github.com/sogaiu/tree-sitter-clojure/tar.gz/e43eff80d17cf34852dcd92ca5e6986d23a7040f}
     version: 0.0.13
 
   tree-sitter-cmake@https://codeload.github.com/uyha/tree-sitter-cmake/tar.gz/ca627bb5828616b6246aafdc3c3222789e728e37:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/uyha/tree-sitter-cmake/tar.gz/ca627bb5828616b6246aafdc3c3222789e728e37}
+    resolution: {gitHosted: true, integrity: sha512-8oVQBz3QPpqDHMxRqqIyWi3nLSpbAIaBUFh6lQV7M0ExBKdKxVZOl6LMbh6LBVTNGeDDb7oCz1NMd3DXcAsIDA==, tarball: https://codeload.github.com/uyha/tree-sitter-cmake/tar.gz/ca627bb5828616b6246aafdc3c3222789e728e37}
     version: 0.7.4
     peerDependencies:
       tree-sitter: ^0.21.0
@@ -1162,7 +1263,7 @@ packages:
         optional: true
 
   tree-sitter-commonlisp@https://codeload.github.com/tree-sitter-grammars/tree-sitter-commonlisp/tar.gz/32323509b3d9fe96607d151c2da2c9009eb13a2f:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-commonlisp/tar.gz/32323509b3d9fe96607d151c2da2c9009eb13a2f}
+    resolution: {gitHosted: true, integrity: sha512-pma1rPL0F+foYNXF2SrgIUrQxgZdFvwurM3PLMkWMU3Xg9lBmqvSc/B2r+wXnFmNsrtUeWDtdnMP1s14e17HKg==, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-commonlisp/tar.gz/32323509b3d9fe96607d151c2da2c9009eb13a2f}
     version: 0.4.1
     peerDependencies:
       tree-sitter: ^0.21.1
@@ -1191,7 +1292,7 @@ packages:
         optional: true
 
   tree-sitter-csv@https://codeload.github.com/tree-sitter-grammars/tree-sitter-csv/tar.gz/f6bf6e35eb0b95fbadea4bb39cb9709507fcb181:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-csv/tar.gz/f6bf6e35eb0b95fbadea4bb39cb9709507fcb181}
+    resolution: {gitHosted: true, integrity: sha512-/E3prCcMqWFJoHUlVNVdBu42AXygtQ7oFniKf6iHHMp80OupppY4Kv4xnnMRTZ/O8IN9hgeAJWo+F4uTplzJJQ==, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-csv/tar.gz/f6bf6e35eb0b95fbadea4bb39cb9709507fcb181}
     version: 1.2.0
 
   tree-sitter-cuda@0.21.1:
@@ -1203,7 +1304,7 @@ packages:
         optional: true
 
   tree-sitter-d@https://codeload.github.com/gdamore/tree-sitter-d/tar.gz/64f27931b4e6fdd75af1102c79bacbca68a8dacc:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/gdamore/tree-sitter-d/tar.gz/64f27931b4e6fdd75af1102c79bacbca68a8dacc}
+    resolution: {gitHosted: true, integrity: sha512-jp81yzBLe5+vDzq/3yJlEJO1fAGZ1RBq+NQJa5HvyxJHkeLeXoiUkDd2PMfMexfIyBVG3P4IDOWoEp/t3eaFnQ==, tarball: https://codeload.github.com/gdamore/tree-sitter-d/tar.gz/64f27931b4e6fdd75af1102c79bacbca68a8dacc}
     version: 0.8.2
     peerDependencies:
       tree-sitter: ^0.21.0
@@ -1213,7 +1314,7 @@ packages:
         optional: true
 
   tree-sitter-dart@https://codeload.github.com/UserNobody14/tree-sitter-dart/tar.gz/be07cf7118d3dba06236a3f19541685a68209934:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/UserNobody14/tree-sitter-dart/tar.gz/be07cf7118d3dba06236a3f19541685a68209934}
+    resolution: {gitHosted: true, integrity: sha512-nrXD2A+yi6c1hT3kXSAwls9KrvLgD7vnU8OBoLudDNTqurnbOVxnEAVkza204J2w8AzV3BkPm19MXQHLh/bsQg==, tarball: https://codeload.github.com/UserNobody14/tree-sitter-dart/tar.gz/be07cf7118d3dba06236a3f19541685a68209934}
     version: 1.0.0
     peerDependencies:
       tree-sitter: ^0.25.0
@@ -1223,7 +1324,7 @@ packages:
         optional: true
 
   tree-sitter-desktop@https://codeload.github.com/ValdezFOmar/tree-sitter-desktop/tar.gz/89210af12afabb71a2c9f3d56a964ff0844027dc:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/ValdezFOmar/tree-sitter-desktop/tar.gz/89210af12afabb71a2c9f3d56a964ff0844027dc}
+    resolution: {gitHosted: true, integrity: sha512-Do55k/rV51wCUZ23Cve3/amuzwORnuCTKnXsx2aj7gDbyW+6dh6BrT39gL+TKHf+yGIGfxEWbrNS7DyR6lnbcg==, tarball: https://codeload.github.com/ValdezFOmar/tree-sitter-desktop/tar.gz/89210af12afabb71a2c9f3d56a964ff0844027dc}
     version: 1.1.1
     peerDependencies:
       tree-sitter: ^0.25.0
@@ -1241,7 +1342,7 @@ packages:
         optional: true
 
   tree-sitter-diff@https://codeload.github.com/tree-sitter-grammars/tree-sitter-diff/tar.gz/ada384ac7bfc1307f32de474620120add29998fb:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-diff/tar.gz/ada384ac7bfc1307f32de474620120add29998fb}
+    resolution: {gitHosted: true, integrity: sha512-sWHWppQOxF40ETMDXdhFH8Ctg32Geule8MOpe8/M9FE4jKVDsSMmtsprc/TsoIAhHAmzjOLY+cvqtYM0PSOkRw==, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-diff/tar.gz/ada384ac7bfc1307f32de474620120add29998fb}
     version: 0.2.0
     peerDependencies:
       tree-sitter: ^0.21.1
@@ -1251,7 +1352,7 @@ packages:
         optional: true
 
   tree-sitter-dockerfile@https://codeload.github.com/camdencheek/tree-sitter-dockerfile/tar.gz/971acdd908568b4531b0ba28a445bf0bb720aba5:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/camdencheek/tree-sitter-dockerfile/tar.gz/971acdd908568b4531b0ba28a445bf0bb720aba5}
+    resolution: {gitHosted: true, integrity: sha512-VqmgUjzjSLhYVGd3n7jeJTOfIib+WCofaWtr/b+in51R+LF4bHpfBaYZaHf653ZtFJfes7mFtfMw9i1NgBA2rg==, tarball: https://codeload.github.com/camdencheek/tree-sitter-dockerfile/tar.gz/971acdd908568b4531b0ba28a445bf0bb720aba5}
     version: 0.2.0
     peerDependencies:
       tree-sitter: ^0.21.0
@@ -1261,7 +1362,7 @@ packages:
         optional: true
 
   tree-sitter-editorconfig@https://codeload.github.com/ValdezFOmar/tree-sitter-editorconfig/tar.gz/1882c3f165aa6b56c4c7af91388d97b00ca1afe3:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/ValdezFOmar/tree-sitter-editorconfig/tar.gz/1882c3f165aa6b56c4c7af91388d97b00ca1afe3}
+    resolution: {gitHosted: true, integrity: sha512-BZwyu7eNONisQQZtydSLgtnNkVDF9B9cLg7wVhop2D878Ca8FrIsYml1JTBEBSrK1DuuYFcF4SYmlHVgaqbAZA==, tarball: https://codeload.github.com/ValdezFOmar/tree-sitter-editorconfig/tar.gz/1882c3f165aa6b56c4c7af91388d97b00ca1afe3}
     version: 2.0.0
     peerDependencies:
       tree-sitter: ^0.25.0
@@ -1291,7 +1392,7 @@ packages:
         optional: true
 
   tree-sitter-erlang@https://codeload.github.com/WhatsApp/tree-sitter-erlang/tar.gz/6ba4c762eb3065495e3db85697ffeecdf364ce35:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/WhatsApp/tree-sitter-erlang/tar.gz/6ba4c762eb3065495e3db85697ffeecdf364ce35}
+    resolution: {gitHosted: true, integrity: sha512-U2iUBTVD+Mmi3N1ZfU6dD8oHn6xslXMjf8/4EvmqA0gc3YCGd/ttpRbkSHJsVVqfB8pajCm3F3yO//2BbRZYsA==, tarball: https://codeload.github.com/WhatsApp/tree-sitter-erlang/tar.gz/6ba4c762eb3065495e3db85697ffeecdf364ce35}
     version: 0.0.0
     peerDependencies:
       tree-sitter: ^0.25.1
@@ -1301,7 +1402,7 @@ packages:
         optional: true
 
   tree-sitter-fish@https://codeload.github.com/ram02z/tree-sitter-fish/tar.gz/b7f1d682941e0c62dfcd6bf9ef481638351bab16:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/ram02z/tree-sitter-fish/tar.gz/b7f1d682941e0c62dfcd6bf9ef481638351bab16}
+    resolution: {gitHosted: true, integrity: sha512-bxfhfsjgLkIb2EGpivzIOLc+DusIDEESxG60H931s3tZlYvsX+7+3AAgffos0xaHJA/05Crmi9WzzJHRo4D5zg==, tarball: https://codeload.github.com/ram02z/tree-sitter-fish/tar.gz/b7f1d682941e0c62dfcd6bf9ef481638351bab16}
     version: 3.7.0
     peerDependencies:
       tree-sitter: ^0.21.0
@@ -1311,7 +1412,7 @@ packages:
         optional: true
 
   tree-sitter-fortran@https://codeload.github.com/stadelmanma/tree-sitter-fortran/tar.gz/7edacd2b21aa80057d9725384a1304a1c758e0f8:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/stadelmanma/tree-sitter-fortran/tar.gz/7edacd2b21aa80057d9725384a1304a1c758e0f8}
+    resolution: {gitHosted: true, integrity: sha512-UMr31m5sW7F5w7RsGBVd1rjHNzl/LcK/Qn1D+ECUkXzIrwxULahD9FgXtT1HeWpbVvPnA+yVv+dtN7pTd6dxmg==, tarball: https://codeload.github.com/stadelmanma/tree-sitter-fortran/tar.gz/7edacd2b21aa80057d9725384a1304a1c758e0f8}
     version: 0.5.1
     peerDependencies:
       tree-sitter: '==0.26.0'
@@ -1329,7 +1430,7 @@ packages:
         optional: true
 
   tree-sitter-gdshader@https://codeload.github.com/airblast-dev/tree-sitter-gdshader/tar.gz/68268631c8b6dc093985f1246b099f81b30ea7d1:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/airblast-dev/tree-sitter-gdshader/tar.gz/68268631c8b6dc093985f1246b099f81b30ea7d1}
+    resolution: {gitHosted: true, integrity: sha512-wTaxdsBWXBmcNJdSq5citg/vc98swuvFnPVeDypVu8hoIPgae1l0G2uS3VAS0rGSdC5KB/+OsyuRAGC4CHud0w==, tarball: https://codeload.github.com/airblast-dev/tree-sitter-gdshader/tar.gz/68268631c8b6dc093985f1246b099f81b30ea7d1}
     version: 0.4.0
     peerDependencies:
       tree-sitter: ^0.22.4
@@ -1338,11 +1439,11 @@ packages:
         optional: true
 
   tree-sitter-git-config@https://codeload.github.com/the-mikedavis/tree-sitter-git-config/tar.gz/3a61756a81a86291a0f48e3eeeaa0692b9981aa9:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/the-mikedavis/tree-sitter-git-config/tar.gz/3a61756a81a86291a0f48e3eeeaa0692b9981aa9}
+    resolution: {gitHosted: true, integrity: sha512-oKLaBok6GLgtbGWJUB9L/m1AVmHxXEMouQHY3oybdmMkFF85WpJHmbDxTZI3X+a8D7YnavxDmI11gqe/tyMdHg==, tarball: https://codeload.github.com/the-mikedavis/tree-sitter-git-config/tar.gz/3a61756a81a86291a0f48e3eeeaa0692b9981aa9}
     version: 0.0.1
 
   tree-sitter-git-rebase@https://codeload.github.com/the-mikedavis/tree-sitter-git-rebase/tar.gz/32686d6b72980b36f876ae2d07719c9c3ed154e2:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/the-mikedavis/tree-sitter-git-rebase/tar.gz/32686d6b72980b36f876ae2d07719c9c3ed154e2}
+    resolution: {gitHosted: true, integrity: sha512-0/FLowfNnbEXXAIQSeL7T3CqlbKy2OWjbkZMTkRK+sbdi/p6IOGh30q90BdlWRfhj/vmxbOs5sZ4Qw2RvlpxdA==, tarball: https://codeload.github.com/the-mikedavis/tree-sitter-git-rebase/tar.gz/32686d6b72980b36f876ae2d07719c9c3ed154e2}
     version: 0.1.0
     peerDependencies:
       tree-sitter: ^0.25.0
@@ -1354,11 +1455,11 @@ packages:
     resolution: {integrity: sha512-xZ+7Kd/3NGQ29TQHpGkXSNCAFwJbCjW8ogBg0JwE3gnNHIX8sAacFBCp3YrEsOoSTt5Yqq8x5wKDfJOiugdhgw==}
 
   tree-sitter-gitignore@https://codeload.github.com/shunsambongi/tree-sitter-gitignore/tar.gz/f4685bf11ac466dd278449bcfe5fd014e94aa504:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/shunsambongi/tree-sitter-gitignore/tar.gz/f4685bf11ac466dd278449bcfe5fd014e94aa504}
+    resolution: {gitHosted: true, integrity: sha512-nF/t3PnO8o/YtjwNEP3T0+InvouvczKzqCeFKxtcuA/kK4RTm7gVFDmQxCmJu87Q9yihfI3GnXxFDT7chNi/pA==, tarball: https://codeload.github.com/shunsambongi/tree-sitter-gitignore/tar.gz/f4685bf11ac466dd278449bcfe5fd014e94aa504}
     version: 0.1.0
 
   tree-sitter-gleam@https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/cefbd6863983b4df3214b7934bde5e9ca63d5b7f:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/cefbd6863983b4df3214b7934bde5e9ca63d5b7f}
+    resolution: {gitHosted: true, integrity: sha512-W26zmPoHd08Lohq9EF6UGW3BH+v2uGv93xVwilo9nqwj5neBnnSnoE/cL2LII77AMohgp+IADFuFnwSlqkctIQ==, tarball: https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/cefbd6863983b4df3214b7934bde5e9ca63d5b7f}
     version: 1.0.0
     peerDependencies:
       tree-sitter: ^0.21.0
@@ -1388,8 +1489,8 @@ packages:
       tree-sitter:
         optional: true
 
-  tree-sitter-graphql@https://codeload.github.com/joowani/tree-sitter-graphql/tar.gz/43c7f575a26740c1fee85cf52bf5ac1bbd7226ce:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/joowani/tree-sitter-graphql/tar.gz/43c7f575a26740c1fee85cf52bf5ac1bbd7226ce}
+  tree-sitter-graphql@https://codeload.github.com/joowani/tree-sitter-graphql/tar.gz/1abcd628084f2fd8b1e74081b5552acfd2c21cd6:
+    resolution: {gitHosted: true, integrity: sha512-p9JencTHVV0/+nQIdEZ9ka0Ext+HI3P1Zn8hjliUGoYj+s+m6xNKodGeJtFg7SFfAI80FSvIKSphhDf9wwkPOg==, tarball: https://codeload.github.com/joowani/tree-sitter-graphql/tar.gz/1abcd628084f2fd8b1e74081b5552acfd2c21cd6}
     version: 0.1.0
     peerDependencies:
       tree-sitter: ^0.21.1
@@ -1414,7 +1515,7 @@ packages:
         optional: true
 
   tree-sitter-ini@https://codeload.github.com/justinmk/tree-sitter-ini/tar.gz/e4018b5176132b4f3c5d6e61cea383f42288d0f5:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/justinmk/tree-sitter-ini/tar.gz/e4018b5176132b4f3c5d6e61cea383f42288d0f5}
+    resolution: {gitHosted: true, integrity: sha512-qBxRcV6zHeNtxca2ixOgmeR8g3Ykx7MsYndWtivK/67HA92eFCLUU1Nvk7B1jwQ+09n7zf/+DpvTXjPSuMajuw==, tarball: https://codeload.github.com/justinmk/tree-sitter-ini/tar.gz/e4018b5176132b4f3c5d6e61cea383f42288d0f5}
     version: 1.4.0
     peerDependencies:
       tree-sitter: ^0.21.0
@@ -1448,7 +1549,7 @@ packages:
         optional: true
 
   tree-sitter-jq@https://codeload.github.com/flurie/tree-sitter-jq/tar.gz/c204e36d2c3c6fce1f57950b12cabcc24e5cc4d9:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/flurie/tree-sitter-jq/tar.gz/c204e36d2c3c6fce1f57950b12cabcc24e5cc4d9}
+    resolution: {gitHosted: true, integrity: sha512-j+Bl6HU1FTlErZUkOKHkgPq77e+znHNzBw10Df8DLXMFxCWHNehe505RUAPso3bUc4dH/tjK/ijoUk1RIDgRRw==, tarball: https://codeload.github.com/flurie/tree-sitter-jq/tar.gz/c204e36d2c3c6fce1f57950b12cabcc24e5cc4d9}
     version: 1.0.0
 
   tree-sitter-json@0.24.8:
@@ -1460,7 +1561,7 @@ packages:
         optional: true
 
   tree-sitter-julia@https://codeload.github.com/tree-sitter/tree-sitter-julia/tar.gz/e0f9dcd180fdcfcfa8d79a3531e11d99e79321d3:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter/tree-sitter-julia/tar.gz/e0f9dcd180fdcfcfa8d79a3531e11d99e79321d3}
+    resolution: {gitHosted: true, integrity: sha512-YtfxceRbzjcdOhsxD0rz4in4ImHI//kmTJBdIeyNhrSvOmoZ1eRNHXsd1iOKoOYUPTEv9ViFYc73Nxzn93LcAg==, tarball: https://codeload.github.com/tree-sitter/tree-sitter-julia/tar.gz/e0f9dcd180fdcfcfa8d79a3531e11d99e79321d3}
     version: 0.25.0
     peerDependencies:
       tree-sitter: ^0.21.1
@@ -1469,7 +1570,7 @@ packages:
         optional: true
 
   tree-sitter-just@https://codeload.github.com/casey/tree-sitter-just/tar.gz/5685543a6e64f66335e25518c9ae8ffa1dae3d01:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/casey/tree-sitter-just/tar.gz/5685543a6e64f66335e25518c9ae8ffa1dae3d01}
+    resolution: {gitHosted: true, integrity: sha512-CGPIKrpEhxzs2mUwJl0AcQKvK91dSVW8ghVvgS3KBNibXSQ3kl2q40PnPY1d4Jl+fyw3pg51kZFzkcxYlJ+3kw==, tarball: https://codeload.github.com/casey/tree-sitter-just/tar.gz/5685543a6e64f66335e25518c9ae8ffa1dae3d01}
     version: 0.2.0
     peerDependencies:
       tree_sitter: '*'
@@ -1478,7 +1579,7 @@ packages:
         optional: true
 
   tree-sitter-kdl@https://codeload.github.com/tree-sitter-grammars/tree-sitter-kdl/tar.gz/b37e3d58e5c5cf8d739b315d6114e02d42e66664:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-kdl/tar.gz/b37e3d58e5c5cf8d739b315d6114e02d42e66664}
+    resolution: {gitHosted: true, integrity: sha512-fvVN8mK8rza6nq8SHspoyR9t7K1jNZdhqYKWbmo6h0wDTsHj/j1pLsluhv5IgY8AeJakuvvmWaqSnzCoXMVaKw==, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-kdl/tar.gz/b37e3d58e5c5cf8d739b315d6114e02d42e66664}
     version: 1.1.0
 
   tree-sitter-kotlin@0.3.8:
@@ -1491,7 +1592,7 @@ packages:
         optional: true
 
   tree-sitter-liquid@https://codeload.github.com/hankthetank27/tree-sitter-liquid/tar.gz/e45dbac8c5fa95b1f0e00e7e0c04bc8855823391:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/hankthetank27/tree-sitter-liquid/tar.gz/e45dbac8c5fa95b1f0e00e7e0c04bc8855823391}
+    resolution: {gitHosted: true, integrity: sha512-DKLzxCXUk87dDmzoAl849PVk9TI0wNNmy4WmV3U75b+vSbV1VidYjy3+B7B7QSigM7AxMIBXWv/xmLwMj0I9kg==, tarball: https://codeload.github.com/hankthetank27/tree-sitter-liquid/tar.gz/e45dbac8c5fa95b1f0e00e7e0c04bc8855823391}
     version: 0.1.0
     peerDependencies:
       tree-sitter: ^0.21.1
@@ -1501,7 +1602,7 @@ packages:
         optional: true
 
   tree-sitter-make@https://codeload.github.com/tree-sitter-grammars/tree-sitter-make/tar.gz/70613f3d812cbabbd7f38d104d60a409c4008b43:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-make/tar.gz/70613f3d812cbabbd7f38d104d60a409c4008b43}
+    resolution: {gitHosted: true, integrity: sha512-upE68eaBzb8NdRQMr54A2/z6sIMda6vs39oY9NiTNzH3cTq/H3KvUXpwbpAtp5/ulzAl8LGbPaRun+uBjVV4lg==, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-make/tar.gz/70613f3d812cbabbd7f38d104d60a409c4008b43}
     version: 1.1.1
     peerDependencies:
       tree-sitter: ^0.25.0
@@ -1519,7 +1620,7 @@ packages:
         optional: true
 
   tree-sitter-nim@https://codeload.github.com/alaviss/tree-sitter-nim/tar.gz/ac72ba30d16edf0be021588a9301ede4accd6cf4:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/alaviss/tree-sitter-nim/tar.gz/ac72ba30d16edf0be021588a9301ede4accd6cf4}
+    resolution: {gitHosted: true, integrity: sha512-9I3Pc8NBnw+C7BWWl74/EjyoeQJoQbyDhsAFKUeZnkzwmV+KF7IJBD6qzT6j6AyHCyWoICy3+zxkd7VY2JshCw==, tarball: https://codeload.github.com/alaviss/tree-sitter-nim/tar.gz/ac72ba30d16edf0be021588a9301ede4accd6cf4}
     version: 0.6.2
     peerDependencies:
       tree-sitter: ^0.25.0
@@ -1529,7 +1630,7 @@ packages:
         optional: true
 
   tree-sitter-nix@https://codeload.github.com/nix-community/tree-sitter-nix/tar.gz/3d0173d903e630b6e14d17f1cf79488791379ded:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/nix-community/tree-sitter-nix/tar.gz/3d0173d903e630b6e14d17f1cf79488791379ded}
+    resolution: {gitHosted: true, integrity: sha512-6lRgc+xEGhISl24ypKojFPe43vdifNpGwyHibO7gqJa+60EEEuB5Xa5NwFlZAriZIYsRkxtp3gnHh4o1Ot6fFA==, tarball: https://codeload.github.com/nix-community/tree-sitter-nix/tar.gz/3d0173d903e630b6e14d17f1cf79488791379ded}
     version: 0.3.0
 
   tree-sitter-objc@3.0.2:
@@ -1540,8 +1641,8 @@ packages:
       tree-sitter:
         optional: true
 
-  tree-sitter-ocaml@https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/b40028552b03e291ac43b59b51908d56effa597b:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/b40028552b03e291ac43b59b51908d56effa597b}
+  tree-sitter-ocaml@https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/a4ce49a6c17e88e7ca8350cfb666749d9a5c6630:
+    resolution: {gitHosted: true, integrity: sha512-guasEEPm+5GK8pBUwSaXUBYRyOUmw6k0YofqL9xMHBu0T6QZcJODQsfxv6yVBVGQ0bWwk8y34D+7THcu55lICA==, tarball: https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/a4ce49a6c17e88e7ca8350cfb666749d9a5c6630}
     version: 0.25.0
     peerDependencies:
       tree-sitter: ^0.25.0
@@ -1550,7 +1651,7 @@ packages:
         optional: true
 
   tree-sitter-perl@https://codeload.github.com/tree-sitter-perl/tree-sitter-perl/tar.gz/567caa6fc6adbe19977bc6c21fd31275fc54d810:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter-perl/tree-sitter-perl/tar.gz/567caa6fc6adbe19977bc6c21fd31275fc54d810}
+    resolution: {gitHosted: true, integrity: sha512-pPDGFbWFek4ySyLQVDOygW6lj8s/RVxh0z7I/X39g3K4KDCj7xKLyWYZLhaZeqt33+Ni4VnqTtxfR9rxZzLjgA==, tarball: https://codeload.github.com/tree-sitter-perl/tree-sitter-perl/tar.gz/567caa6fc6adbe19977bc6c21fd31275fc54d810}
     version: 1.1.2
     engines: {node: '>= 20.0.0'}
     peerDependencies:
@@ -1560,7 +1661,7 @@ packages:
         optional: true
 
   tree-sitter-php@https://codeload.github.com/tree-sitter/tree-sitter-php/tar.gz/3fda2fb9577166c6399834917f9844f30370beea:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter/tree-sitter-php/tar.gz/3fda2fb9577166c6399834917f9844f30370beea}
+    resolution: {gitHosted: true, integrity: sha512-DCy0mAE7OQl3yBkSbtIjb4DfU78HOFL1kj4xDy9bnwZFqL3hJkV+WG4T6yhkNNrgDlyGid7CMTQdbmXrYSqltA==, tarball: https://codeload.github.com/tree-sitter/tree-sitter-php/tar.gz/3fda2fb9577166c6399834917f9844f30370beea}
     version: 0.24.2
     peerDependencies:
       tree-sitter: ^0.22.4
@@ -1584,9 +1685,9 @@ packages:
       tree-sitter:
         optional: true
 
-  tree-sitter-proto@https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/5a256fe3b6be3bd2ea4d03e1213d847c7093c2e1:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/5a256fe3b6be3bd2ea4d03e1213d847c7093c2e1}
-    version: 0.5.0
+  tree-sitter-proto@https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/6c878d18628ebbff3474479d2fdd6d8ba1954c3e:
+    resolution: {gitHosted: true, integrity: sha512-zAayfNV3dTn6Aitd474E3wou59iCy66GCpMAiOHO/npU0XrgTN0eb6TfaH8OndL/DK7B3cB1/P+GydqmjMbG5g==, tarball: https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/6c878d18628ebbff3474479d2fdd6d8ba1954c3e}
+    version: 0.6.0
     peerDependencies:
       tree-sitter: ^0.21.1
     peerDependenciesMeta:
@@ -1611,7 +1712,7 @@ packages:
         optional: true
 
   tree-sitter-query@https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/8e9e223812ff30854fbc912adbec696ba5f0e023:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/8e9e223812ff30854fbc912adbec696ba5f0e023}
+    resolution: {gitHosted: true, integrity: sha512-5hIy8JSlR1QXLthtrR0/hSlyWEjAqZtPAoQXzv1ngiLrzj0mssexWMKOlWufZoVoiChUZDKw66fbO83hLGW65g==, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/8e9e223812ff30854fbc912adbec696ba5f0e023}
     version: 0.8.0
     peerDependencies:
       tree-sitter: ^0.22.4
@@ -1620,7 +1721,7 @@ packages:
         optional: true
 
   tree-sitter-razor@https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/d4664e409caaea12f73c9525484e3cf88b1cf718:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/d4664e409caaea12f73c9525484e3cf88b1cf718}
+    resolution: {gitHosted: true, integrity: sha512-R6HgW7NBWf24ISavjZvUA7BokZ/GNZIhslqwmCAuIxvFv2rz/8lkOkJ4ksXrSn9kCqjbTpVs5I+mDAiGbqE0jw==, tarball: https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/d4664e409caaea12f73c9525484e3cf88b1cf718}
     version: 0.1.1
     peerDependencies:
       tree-sitter: ^0.21.1
@@ -1645,7 +1746,7 @@ packages:
         optional: true
 
   tree-sitter-rescript@https://codeload.github.com/rescript-lang/tree-sitter-rescript/tar.gz/19ed8a8e6bcc844b71c37e9edaffc60c77f74d7c:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/rescript-lang/tree-sitter-rescript/tar.gz/19ed8a8e6bcc844b71c37e9edaffc60c77f74d7c}
+    resolution: {gitHosted: true, integrity: sha512-AfEXDMR3qMNbF6j5uLfuap0Sv5PYwF9UBA5ilshwEy0t81Ugys616dW3oM8p7mdovLFQkkLB3ihzbbJXRSmr+g==, tarball: https://codeload.github.com/rescript-lang/tree-sitter-rescript/tar.gz/19ed8a8e6bcc844b71c37e9edaffc60c77f74d7c}
     version: 6.0.0
     peerDependencies:
       tree-sitter: ^0.21.1
@@ -1686,7 +1787,7 @@ packages:
         optional: true
 
   tree-sitter-sln@https://codeload.github.com/Crysthamus/tree-sitter-sln/tar.gz/691d383fd406149201ef6b8a94e2cfc0f514ae3c:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/Crysthamus/tree-sitter-sln/tar.gz/691d383fd406149201ef6b8a94e2cfc0f514ae3c}
+    resolution: {gitHosted: true, integrity: sha512-qY2JNAEf/To7MM/JY2J1KsJhyu32zC4fxBja5xcyP+TdX2QiwUHS8RfHtuBduG16L/QlkLqikwNWjsLrlUh7KA==, tarball: https://codeload.github.com/Crysthamus/tree-sitter-sln/tar.gz/691d383fd406149201ef6b8a94e2cfc0f514ae3c}
     version: 0.2.0
     peerDependencies:
       tree-sitter: ^0.25.0
@@ -1704,7 +1805,7 @@ packages:
         optional: true
 
   tree-sitter-ssh-config@https://codeload.github.com/tree-sitter-grammars/tree-sitter-ssh-config/tar.gz/0c35b243392268f48fd096607da192d76c843398:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-ssh-config/tar.gz/0c35b243392268f48fd096607da192d76c843398}
+    resolution: {gitHosted: true, integrity: sha512-qiEERlYdgJvZXiXXJqmBjkUNYegKZ7boMcgtJpYp0ciwkn5/E8LxbnIj0wL3T3+njj194ahiKDzaIHi7tsz50A==, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-ssh-config/tar.gz/0c35b243392268f48fd096607da192d76c843398}
     version: 0.5.0
     peerDependencies:
       tree-sitter: ^0.25.0
@@ -1713,7 +1814,7 @@ packages:
         optional: true
 
   tree-sitter-svelte@https://codeload.github.com/Himujjal/tree-sitter-svelte/tar.gz/60ea1d673a1a3eeeb597e098d9ada9ed0c79ef4b:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/Himujjal/tree-sitter-svelte/tar.gz/60ea1d673a1a3eeeb597e098d9ada9ed0c79ef4b}
+    resolution: {gitHosted: true, integrity: sha512-JJO27t4ehbDCj6xqTf77Yb47916hP7Rs0+zmAYKmKg37W2j7pG32zdxK5PrsdmTYlczXmgDsJprXYGPdCxpdeQ==, tarball: https://codeload.github.com/Himujjal/tree-sitter-svelte/tar.gz/60ea1d673a1a3eeeb597e098d9ada9ed0c79ef4b}
     version: 0.11.0
     engines: {node: ~18.4.0}
 
@@ -1735,7 +1836,7 @@ packages:
         optional: true
 
   tree-sitter-templ@https://codeload.github.com/vrischmann/tree-sitter-templ/tar.gz/94d40865c15ebbaff9ed11dde5d6490b0f5de092:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/vrischmann/tree-sitter-templ/tar.gz/94d40865c15ebbaff9ed11dde5d6490b0f5de092}
+    resolution: {gitHosted: true, integrity: sha512-i8VOUF9z8FULUSL8mbrF43l13Gaul1p0GCF4MKuobLUlFsopvI6AAMRJMps2TrE1dt43FzDXvfDx4OmMokpIXw==, tarball: https://codeload.github.com/vrischmann/tree-sitter-templ/tar.gz/94d40865c15ebbaff9ed11dde5d6490b0f5de092}
     version: 2.2.0
     peerDependencies:
       tree-sitter: ^0.25.0
@@ -1745,7 +1846,7 @@ packages:
         optional: true
 
   tree-sitter-test@https://codeload.github.com/uben0/tree-sitter-typst/tar.gz/46cf4ded12ee974a70bf8457263b67ad7ee0379d:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/uben0/tree-sitter-typst/tar.gz/46cf4ded12ee974a70bf8457263b67ad7ee0379d}
+    resolution: {gitHosted: true, integrity: sha512-OQp9h5Jztex7w1kkZGELK0aivCAGDRumDlyoOUuMiJ0N6DA2TjVxtI+iZzvCT9vasePcVLBPMTdc/Dmdf+oYNA==, tarball: https://codeload.github.com/uben0/tree-sitter-typst/tar.gz/46cf4ded12ee974a70bf8457263b67ad7ee0379d}
     version: 0.10.0
     peerDependencies:
       tree-sitter: ^0.21.0
@@ -1763,7 +1864,7 @@ packages:
         optional: true
 
   tree-sitter-vim@https://codeload.github.com/Crysthamus/tree-sitter-vim/tar.gz/87ca54bb5e67036bf84481e73353bece72db028d:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/Crysthamus/tree-sitter-vim/tar.gz/87ca54bb5e67036bf84481e73353bece72db028d}
+    resolution: {gitHosted: true, integrity: sha512-nDi3s/PB+/JWJN6jzOOFArD1MQr0lk7xDfzofYc3irvEyQb62fgp/uKFaExmr9NNghMeIsdbU7DyfpCVYxmspw==, tarball: https://codeload.github.com/Crysthamus/tree-sitter-vim/tar.gz/87ca54bb5e67036bf84481e73353bece72db028d}
     version: 0.8.1
     peerDependencies:
       tree-sitter: ^0.25.0
@@ -1772,7 +1873,7 @@ packages:
         optional: true
 
   tree-sitter-vimdoc@https://codeload.github.com/neovim/tree-sitter-vimdoc/tar.gz/23daa416c1ff5d15f59a1aa648f031d6e3ee15c5:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/neovim/tree-sitter-vimdoc/tar.gz/23daa416c1ff5d15f59a1aa648f031d6e3ee15c5}
+    resolution: {gitHosted: true, integrity: sha512-EdxQJU6/HsIetG4q/u8yAjmskmyzPQTC5ue0gD2DhBdhJxFNScXjMWgcR4/P3MTN0gORcbqCc8QT9K8PWxwD1g==, tarball: https://codeload.github.com/neovim/tree-sitter-vimdoc/tar.gz/23daa416c1ff5d15f59a1aa648f031d6e3ee15c5}
     version: 4.1.0
     peerDependencies:
       tree-sitter: ^0.22.4
@@ -1781,7 +1882,7 @@ packages:
         optional: true
 
   tree-sitter-vue@https://codeload.github.com/tree-sitter-grammars/tree-sitter-vue/tar.gz/ce8011a414fdf8091f4e4071752efc376f4afb08:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-vue/tar.gz/ce8011a414fdf8091f4e4071752efc376f4afb08}
+    resolution: {gitHosted: true, integrity: sha512-7m/ZQ2LvkUga6EWp2kS6ppXJlzud0PohZw550Y4X4onX6rhlTM8XPzEhMd3M5QSbDvvN7jC76xa02Fb7Mh4a0A==, tarball: https://codeload.github.com/tree-sitter-grammars/tree-sitter-vue/tar.gz/ce8011a414fdf8091f4e4071752efc376f4afb08}
     version: 0.1.0
 
   tree-sitter@0.22.4:
@@ -1852,7 +1953,7 @@ snapshots:
       node-addon-api: 8.9.2
       node-gyp-build: 4.8.4
 
-  '@acristoffers/tree-sitter-matlab@https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/c9ef947ec67fb6b500d5def4f5e09b56990a9f91':
+  '@acristoffers/tree-sitter-matlab@https://codeload.github.com/acristoffers/tree-sitter-matlab/tar.gz/f03d0347acd8bb05d4edd8c845ac1718729e1fad':
     dependencies:
       node-addon-api: 8.9.2
       node-gyp-build: 4.8.4
@@ -2759,7 +2860,7 @@ snapshots:
       node-addon-api: 8.9.2
       node-gyp-build: 4.8.4
 
-  tree-sitter-graphql@https://codeload.github.com/joowani/tree-sitter-graphql/tar.gz/43c7f575a26740c1fee85cf52bf5ac1bbd7226ce:
+  tree-sitter-graphql@https://codeload.github.com/joowani/tree-sitter-graphql/tar.gz/1abcd628084f2fd8b1e74081b5552acfd2c21cd6:
     dependencies:
       node-addon-api: 8.9.2
       node-gyp-build: 4.8.4
@@ -2857,7 +2958,7 @@ snapshots:
       node-gyp-build: 4.8.4
       tree-sitter-c: 0.23.6
 
-  tree-sitter-ocaml@https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/b40028552b03e291ac43b59b51908d56effa597b:
+  tree-sitter-ocaml@https://codeload.github.com/tree-sitter/tree-sitter-ocaml/tar.gz/a4ce49a6c17e88e7ca8350cfb666749d9a5c6630:
     dependencies:
       node-addon-api: 8.9.2
       node-gyp-build: 4.8.4
@@ -2882,7 +2983,7 @@ snapshots:
       node-addon-api: 8.9.2
       node-gyp-build: 4.8.4
 
-  tree-sitter-proto@https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/5a256fe3b6be3bd2ea4d03e1213d847c7093c2e1:
+  tree-sitter-proto@https://codeload.github.com/coder3101/tree-sitter-proto/tar.gz/6c878d18628ebbff3474479d2fdd6d8ba1954c3e:
     dependencies:
       node-addon-api: 8.9.2
       node-gyp-build: 4.8.4
