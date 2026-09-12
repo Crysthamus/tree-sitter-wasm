@@ -12,6 +12,7 @@ const MANIFEST_ONLY = process.env.MANIFEST_ONLY === "true";
 const SHARD_INDEX = parseInt(process.env.SHARD_INDEX || "0", 10);
 const SHARD_TOTAL = parseInt(process.env.SHARD_TOTAL || "1", 10);
 const TS_BIN = path.resolve("node_modules", ".bin", "tree-sitter");
+let initialBuildPromise = null;
 
 const IGNORED_DIRS = new Set([
 	"node_modules",
@@ -294,7 +295,7 @@ async function processSourceGrammar(grammarDirs, depPath, baseCleanName) {
 
 		const langName = getLanguageName(baseCleanName, cleanFolderName);
 
-    if (langName == "php_only") {
+    if (langName === "php_only") {
       continue;
     }
 
@@ -304,10 +305,15 @@ async function processSourceGrammar(grammarDirs, depPath, baseCleanName) {
 			await fs.mkdir(langOutDir, { recursive: true });
 
 			await generateParser(grammarDir);
+      const buildCmd = `"${TS_BIN}" build --wasm "${grammarDir}"`;
 
-			await execAsync(`"${TS_BIN}" build --wasm "${grammarDir}"`, {
-				cwd: langOutDir,
-			});
+      if (!initialBuildPromise) {
+        initialBuildPromise = execAsync(buildCmd, { cwd: langOutDir });
+        await initialBuildPromise;
+      } else {
+        await initialBuildPromise.catch(() => {});
+        await execAsync(buildCmd, {cwd: langOutDir});
+      }
 
 			const outFiles = await fs.readdir(langOutDir);
 			const generatedWasm = outFiles.find((f) => f.endsWith(".wasm"));
@@ -460,17 +466,11 @@ async function main() {
 
 	deps = combinedDeps.filter((_, i) => i % SHARD_TOTAL === SHARD_INDEX);
 
-  const nestedResults = [];
-  if (deps.length > 0) {
-    nestedResults.push(await processDependency(deps[0], allDeps[deps[0]], cache));
-      
-    const rest = await pMap(
-        deps.slice(1),
-        (dep) => processDependency(dep, allDeps[dep], cache),
-        { concurrency: 3 },
-    );
-    nestedResults.push(...rest);
-  }
+  const nestedResults = await pMap(
+    deps,
+    ( dep ) => processDependency(dep, allDeps[dep], cache),
+    { concurrency: 3 },
+  )
 
 	const flattenedResults = nestedResults.flat();
 	const successfulLanguages = new Set(flattenedResults.map((r) => r.langName));
