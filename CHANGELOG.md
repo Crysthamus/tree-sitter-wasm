@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.0] - 2026-09-12
+### :bug: Bug Fixes
+- [`f3a07e3`](https://github.com/Crysthamus/tree-sitter-wasm/commit/f3a07e326dd0fd0130ed4710f8128bb9084d1c4a) - certain grammars not being compiled *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+- [`9c381bd`](https://github.com/Crysthamus/tree-sitter-wasm/commit/9c381bd7637760f64370ca5646e46f8352be9aca) - **build**: halt on error and seed cache *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+
+### :wrench: Chores
+- [`c3955e4`](https://github.com/Crysthamus/tree-sitter-wasm/commit/c3955e4cbee3b78138283cd7a14fb51923044cbc) - update grammars *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+- [`a8e61ad`](https://github.com/Crysthamus/tree-sitter-wasm/commit/a8e61ad63f8aa90789d5f910c3b0ea62abe55617) - remove certain grammars *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+
+
 ## [v1.1.8] - 2026-09-08
 ### :sparkles: New Features
 - [`3e8712d`](https://github.com/Crysthamus/tree-sitter-wasm/commit/3e8712de584682bf4fe13ad3c76f66bdcd893079) - **rescript**: add rescript wasm *(commit by [@Crysthamus](https://github.com/Crysthamus))*
@@ -129,3 +139,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.1.6]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.5...v1.1.6
 [v1.1.7]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.6...v1.1.7
 [v1.1.8]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.7...v1.1.8
+[v2.0.0]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.8...v2.0.0
