@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.1] - 2026-09-12
+### :wrench: Chores
+- [`510f8d1`](https://github.com/Crysthamus/tree-sitter-wasm/commit/510f8d1dd521b75699ff75f931653889eabebf08) - **deps**: bump justinthelaw/maximize-github-runner-space *(PR [#14](https://github.com/Crysthamus/tree-sitter-wasm/pull/14) by [@dependabot[bot]](https://github.com/apps/dependabot))*
+- [`f64ec0f`](https://github.com/Crysthamus/tree-sitter-wasm/commit/f64ec0f579a35efa2a2de2b1913f4366065912a9) - bump to 2.0.1 *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+
+
 ## [v2.0.0] - 2026-09-12
 ### :bug: Bug Fixes
 - [`f3a07e3`](https://github.com/Crysthamus/tree-sitter-wasm/commit/f3a07e326dd0fd0130ed4710f8128bb9084d1c4a) - certain grammars not being compiled *(commit by [@Crysthamus](https://github.com/Crysthamus))*
@@ -140,3 +146,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.1.7]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.6...v1.1.7
 [v1.1.8]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.7...v1.1.8
 [v2.0.0]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.8...v2.0.0
+[v2.0.1]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v2.0.0...v2.0.1
