@@ -1,96 +1,104 @@
 allowBuilds:
-  '@6cdh/tree-sitter-racket': false
-  '@6cdh/tree-sitter-scheme': false
-  '@derekstride/tree-sitter-sql': false
-  '@eagleoutice/tree-sitter-r': false
-  '@elm-tooling/tree-sitter-elm': false
-  '@murtaza64/tree-sitter-groovy@https://codeload.github.com/murtaza64/tree-sitter-groovy/tar.gz/deb0dcf8c4544f07564060f6e9b9f6e4b0bfc27d': false
-  '@pfoerster/tree-sitter-latex@https://codeload.github.com/latex-lsp/tree-sitter-latex/tar.gz/fa8df448fc2c0192a8c2f8cfc97de53cb2b4ecb9': false
-  '@tree-sitter-grammars/tree-sitter-hcl@https://codeload.github.com/Crysthamus/tree-sitter-hcl/tar.gz/eaa20bc01e886864e128f1c60a06b41ca2f38ffc': false
-  '@tree-sitter-grammars/tree-sitter-lua': false
-  '@tree-sitter-grammars/tree-sitter-markdown@https://codeload.github.com/tree-sitter-grammars/tree-sitter-markdown/tar.gz/a0a00f817d02412bd92c54d316f164d827b57b5c': false
-  '@tree-sitter-grammars/tree-sitter-toml': false
-  '@tree-sitter-grammars/tree-sitter-xml': false
-  '@tree-sitter-grammars/tree-sitter-yaml@https://codeload.github.com/tree-sitter-grammars/tree-sitter-yaml/tar.gz/a1c4812a73ec5e089de8e441fdea3a921e8d5079': false
-  '@tree-sitter-grammars/tree-sitter-zig': false
+  "@6cdh/tree-sitter-racket": false
+  "@6cdh/tree-sitter-scheme": false
+  "@acristoffers/tree-sitter-matlab": false
+  "@derekstride/tree-sitter-sql": false
+  "@eagleoutice/tree-sitter-r": false
+  "@elm-tooling/tree-sitter-elm": false
+  "@murtaza64/tree-sitter-groovy": false
+  "@pfoerster/tree-sitter-latex": false
+  "@tree-sitter-grammars/tree-sitter-hcl": false
+  "@tree-sitter-grammars/tree-sitter-lua": false
+  "@tree-sitter-grammars/tree-sitter-markdown": false
+  "@tree-sitter-grammars/tree-sitter-toml": false
+  "@tree-sitter-grammars/tree-sitter-xml": false
+  "@tree-sitter-grammars/tree-sitter-yaml": false
+  "@tree-sitter-grammars/tree-sitter-zig": false
   tree-sitter: true
-  tree-sitter-ada@https://codeload.github.com/briot/tree-sitter-ada/tar.gz/dd5fa4cdb3aba91abc687aa68fb1431396fce6a6: false
+  tree-sitter-ada: false
   tree-sitter-angular: false
   tree-sitter-arduino: false
-  tree-sitter-asm@https://codeload.github.com/RubixDev/tree-sitter-asm/tar.gz/839741fef4dab5128952334624905c82b40c7133: false
-  tree-sitter-astro@https://codeload.github.com/virchau13/tree-sitter-astro/tar.gz/213f6e6973d9b456c6e50e86f19f66877e7ef0ee: false
+  tree-sitter-asm: false
+  tree-sitter-astro: false
   tree-sitter-bash: false
-  tree-sitter-bibtex@https://codeload.github.com/latex-lsp/tree-sitter-bibtex/tar.gz/8d04ed27b3bc7929f14b7df9236797dab9f3fa66: false
+  tree-sitter-bibtex: false
   tree-sitter-c: false
   tree-sitter-c-sharp: false
   tree-sitter-cli: true
-  tree-sitter-cmake@https://codeload.github.com/uyha/tree-sitter-cmake/tar.gz/ca627bb5828616b6246aafdc3c3222789e728e37: false
+  tree-sitter-cmake: false
   tree-sitter-comment: false
-  tree-sitter-commonlisp@https://codeload.github.com/tree-sitter-grammars/tree-sitter-commonlisp/tar.gz/32323509b3d9fe96607d151c2da2c9009eb13a2f: false
+  tree-sitter-commonlisp: false
   tree-sitter-cpp: false
   tree-sitter-css: false
-  tree-sitter-csv@https://codeload.github.com/tree-sitter-grammars/tree-sitter-csv/tar.gz/f6bf6e35eb0b95fbadea4bb39cb9709507fcb181: false
+  tree-sitter-csv: false
   tree-sitter-cuda: false
-  tree-sitter-d@https://codeload.github.com/gdamore/tree-sitter-d/tar.gz/64f27931b4e6fdd75af1102c79bacbca68a8dacc: false
-  tree-sitter-dart@https://codeload.github.com/UserNobody14/tree-sitter-dart/tar.gz/be07cf7118d3dba06236a3f19541685a68209934: false
-  tree-sitter-desktop@https://codeload.github.com/ValdezFOmar/tree-sitter-desktop/tar.gz/89210af12afabb71a2c9f3d56a964ff0844027dc: false
-  tree-sitter-diff@https://codeload.github.com/tree-sitter-grammars/tree-sitter-diff/tar.gz/ada384ac7bfc1307f32de474620120add29998fb: false
-  tree-sitter-dockerfile@https://codeload.github.com/camdencheek/tree-sitter-dockerfile/tar.gz/971acdd908568b4531b0ba28a445bf0bb720aba5: false
-  tree-sitter-editorconfig@https://codeload.github.com/ValdezFOmar/tree-sitter-editorconfig/tar.gz/1882c3f165aa6b56c4c7af91388d97b00ca1afe3: false
+  tree-sitter-d: false
+  tree-sitter-dart: false
+  tree-sitter-desktop: false
+  tree-sitter-diff: false
+  tree-sitter-dockerfile: false
+  tree-sitter-editorconfig: false
   tree-sitter-elisp: false
   tree-sitter-elixir: false
   tree-sitter-embedded-template: false
-  tree-sitter-erlang@https://codeload.github.com/WhatsApp/tree-sitter-erlang/tar.gz/6ba4c762eb3065495e3db85697ffeecdf364ce35: false
-  tree-sitter-fortran@https://codeload.github.com/stadelmanma/tree-sitter-fortran/tar.gz/7edacd2b21aa80057d9725384a1304a1c758e0f8: false
+  tree-sitter-erlang: false
+  tree-sitter-fortran: false
   tree-sitter-gdscript: false
-  tree-sitter-gdshader@https://codeload.github.com/airblast-dev/tree-sitter-gdshader/tar.gz/68268631c8b6dc093985f1246b099f81b30ea7d1: false
-  tree-sitter-git-rebase@https://codeload.github.com/the-mikedavis/tree-sitter-git-rebase/tar.gz/32686d6b72980b36f876ae2d07719c9c3ed154e2: false
+  tree-sitter-gdshader: false
+  tree-sitter-git-rebase: false
   tree-sitter-gitattributes: false
-  tree-sitter-gitignore@https://codeload.github.com/shunsambongi/tree-sitter-gitignore/tar.gz/f4685bf11ac466dd278449bcfe5fd014e94aa504: false
-  tree-sitter-gleam@https://codeload.github.com/gleam-lang/tree-sitter-gleam/tar.gz/cefbd6863983b4df3214b7934bde5e9ca63d5b7f: false
+  tree-sitter-gitcommit: false
+  tree-sitter-gitignore: false
+  tree-sitter-gleam: false
   tree-sitter-glsl: false
   tree-sitter-go: false
   tree-sitter-godot-resource: false
+  tree-sitter-graphql: false
   tree-sitter-haskell: false
   tree-sitter-html: false
-  tree-sitter-ini@https://codeload.github.com/justinmk/tree-sitter-ini/tar.gz/e4018b5176132b4f3c5d6e61cea383f42288d0f5: false
+  tree-sitter-ini: false
   tree-sitter-java: false
   tree-sitter-javascript: false
   tree-sitter-json: false
-  tree-sitter-julia@https://codeload.github.com/tree-sitter/tree-sitter-julia/tar.gz/e0f9dcd180fdcfcfa8d79a3531e11d99e79321d3: false
-  tree-sitter-just@https://codeload.github.com/casey/tree-sitter-just/tar.gz/5685543a6e64f66335e25518c9ae8ffa1dae3d01: false
-  tree-sitter-kdl@https://codeload.github.com/tree-sitter-grammars/tree-sitter-kdl/tar.gz/b37e3d58e5c5cf8d739b315d6114e02d42e66664: false
+  tree-sitter-julia: false
+  tree-sitter-just: false
+  tree-sitter-kdl: false
   tree-sitter-kotlin: false
-  tree-sitter-liquid@https://codeload.github.com/hankthetank27/tree-sitter-liquid/tar.gz/e45dbac8c5fa95b1f0e00e7e0c04bc8855823391: false
-  tree-sitter-make@https://codeload.github.com/tree-sitter-grammars/tree-sitter-make/tar.gz/70613f3d812cbabbd7f38d104d60a409c4008b43: false
+  tree-sitter-liquid: false
+  tree-sitter-make: false
   tree-sitter-nginx: false
-  tree-sitter-nim@https://codeload.github.com/alaviss/tree-sitter-nim/tar.gz/ac72ba30d16edf0be021588a9301ede4accd6cf4: false
-  tree-sitter-nix@https://codeload.github.com/nix-community/tree-sitter-nix/tar.gz/3d0173d903e630b6e14d17f1cf79488791379ded: false
+  tree-sitter-nim: false
+  tree-sitter-nix: false
   tree-sitter-objc: false
-  tree-sitter-perl@https://codeload.github.com/tree-sitter-perl/tree-sitter-perl/tar.gz/567caa6fc6adbe19977bc6c21fd31275fc54d810: false
-  tree-sitter-php@https://codeload.github.com/tree-sitter/tree-sitter-php/tar.gz/3fda2fb9577166c6399834917f9844f30370beea: false
+  tree-sitter-ocaml: false
+  tree-sitter-perl: false
+  tree-sitter-php: false
   tree-sitter-powershell: false
   tree-sitter-prisma: false
+  tree-sitter-proto: false
   tree-sitter-python: false
   tree-sitter-qmljs: false
-  tree-sitter-query@https://codeload.github.com/tree-sitter-grammars/tree-sitter-query/tar.gz/8e9e223812ff30854fbc912adbec696ba5f0e023: false
-  tree-sitter-razor@https://codeload.github.com/tris203/tree-sitter-razor/tar.gz/d4664e409caaea12f73c9525484e3cf88b1cf718: false
+  tree-sitter-query: false
+  tree-sitter-razor: false
   tree-sitter-regex: false
   tree-sitter-requirements: false
-  tree-sitter-rescript@https://codeload.github.com/rescript-lang/tree-sitter-rescript/tar.gz/19ed8a8e6bcc844b71c37e9edaffc60c77f74d7c: false
+  tree-sitter-rescript: false
   tree-sitter-ruby: false
   tree-sitter-rust: false
   tree-sitter-scala: false
-  tree-sitter-sln@https://codeload.github.com/Crysthamus/tree-sitter-sln/tar.gz/691d383fd406149201ef6b8a94e2cfc0f514ae3c: false
+  tree-sitter-sln: false
   tree-sitter-solidity: false
-  tree-sitter-ssh-config@https://codeload.github.com/tree-sitter-grammars/tree-sitter-ssh-config/tar.gz/0c35b243392268f48fd096607da192d76c843398: false
-  tree-sitter-svelte@https://codeload.github.com/Himujjal/tree-sitter-svelte/tar.gz/60ea1d673a1a3eeeb597e098d9ada9ed0c79ef4b: false
+  tree-sitter-ssh-config: false
+  tree-sitter-svelte: false
   tree-sitter-swift: false
-  tree-sitter-templ@https://codeload.github.com/vrischmann/tree-sitter-templ/tar.gz/94d40865c15ebbaff9ed11dde5d6490b0f5de092: false
-  tree-sitter-test@https://codeload.github.com/uben0/tree-sitter-typst/tar.gz/46cf4ded12ee974a70bf8457263b67ad7ee0379d: false
+  tree-sitter-templ: false
+  tree-sitter-test: false
   tree-sitter-typescript: false
-  tree-sitter-vim@https://codeload.github.com/Crysthamus/tree-sitter-vim/tar.gz/87ca54bb5e67036bf84481e73353bece72db028d: false
-  tree-sitter-vimdoc@https://codeload.github.com/neovim/tree-sitter-vimdoc/tar.gz/23daa416c1ff5d15f59a1aa648f031d6e3ee15c5: false
+  tree-sitter-vim: false
+  tree-sitter-vimdoc: false
+  tree-sitter-vue: false
+  tree-sitter-yaml: false
   yarn: false
+
 overrides:
   tree-sitter-html: "^0.23.2"
