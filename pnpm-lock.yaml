@@ -147,7 +147,7 @@ importers:
         version: 1.1.2
       p-map:
         specifier: ^7.0.6
-        version: 7.0.7
+        version: 7.0.8
       tree-sitter-ada:
         specifier: git+https://github.com/briot/tree-sitter-ada.git#dd5fa4cdb3aba91abc687aa68fb1431396fce6a6
         version: https://codeload.github.com/briot/tree-sitter-ada/tar.gz/dd5fa4cdb3aba91abc687aa68fb1431396fce6a6
@@ -562,8 +562,8 @@ packages:
     resolution: {integrity: sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ==}
     hasBin: true
 
-  p-map@7.0.7:
-    resolution: {integrity: sha512-VaWRu2i4FJNRtiRWCuuQRgfQ1B7a6+gMSrO+3j0EQi/k0ULfS9kosRxGoiqwzIjZTDI02tGfk5mXXltLg6QtfQ==}
+  p-map@7.0.8:
+    resolution: {integrity: sha512-MitaVsCuCFIvOLLPIU7NnfrZvS9H9h7kwMUkDo+T2pEISaJD48IV9S8iIdXB7PsvvdxyYcsSTTrr90XKsbulNw==}
     engines: {node: '>=18'}
 
   prettier@2.8.8:
@@ -1376,7 +1376,7 @@ snapshots:
 
   node-gyp-build@4.8.4: {}
 
-  p-map@7.0.7: {}
+  p-map@7.0.8: {}
 
   prettier@2.8.8: {}
 
