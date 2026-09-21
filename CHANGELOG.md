@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.2] - 2026-09-21
+### :sparkles: New Features
+- [`57225f3`](https://github.com/Crysthamus/tree-sitter-wasm/commit/57225f39dca3383037d539ad47cf6571526f12ae) - **parsers**: update cmake, fortran, kdl, nix, ocaml *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+
+### :wrench: Chores
+- [`6c8672f`](https://github.com/Crysthamus/tree-sitter-wasm/commit/6c8672f69386463f28113c871d24aff7f25fd86f) - **deps-dev**: bump p-map from 7.0.7 to 7.0.8 *(PR [#15](https://github.com/Crysthamus/tree-sitter-wasm/pull/15) by [@dependabot[bot]](https://github.com/apps/dependabot))*
+
+
 ## [v2.0.1] - 2026-09-12
 ### :wrench: Chores
 - [`510f8d1`](https://github.com/Crysthamus/tree-sitter-wasm/commit/510f8d1dd521b75699ff75f931653889eabebf08) - **deps**: bump justinthelaw/maximize-github-runner-space *(PR [#14](https://github.com/Crysthamus/tree-sitter-wasm/pull/14) by [@dependabot[bot]](https://github.com/apps/dependabot))*
@@ -147,3 +155,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v1.1.8]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.7...v1.1.8
 [v2.0.0]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.8...v2.0.0
 [v2.0.1]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v2.0.0...v2.0.1
+[v2.0.2]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v2.0.1...v2.0.2
