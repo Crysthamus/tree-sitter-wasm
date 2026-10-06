@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.4] - 2026-10-06
+### :wrench: Chores
+- [`1500b80`](https://github.com/Crysthamus/tree-sitter-wasm/commit/1500b80eca8dcda8da1a3286b524435fc5e2d824) - bump to 2.0.4 *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+
+
 ## [v2.0.3] - 2026-10-06
 ### :sparkles: New Features
 - [`bbab641`](https://github.com/Crysthamus/tree-sitter-wasm/commit/bbab6414d1f6856db8a0f11331fa32cee3f02b8f) - **parsers**: update fortran, gleam, grooby, nix, ocaml, php, proto, rescript and templ *(commit by [@Crysthamus](https://github.com/Crysthamus))*
@@ -165,3 +170,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v2.0.1]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v2.0.0...v2.0.1
 [v2.0.2]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v2.0.1...v2.0.2
 [v2.0.3]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v2.0.2...v2.0.3
+[v2.0.4]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v2.0.3...v2.0.4
