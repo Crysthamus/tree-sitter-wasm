@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.3] - 2026-10-06
+### :sparkles: New Features
+- [`bbab641`](https://github.com/Crysthamus/tree-sitter-wasm/commit/bbab6414d1f6856db8a0f11331fa32cee3f02b8f) - **parsers**: update fortran, gleam, grooby, nix, ocaml, php, proto, rescript and templ *(commit by [@Crysthamus](https://github.com/Crysthamus))*
+
+### :wrench: Chores
+- [`14058bf`](https://github.com/Crysthamus/tree-sitter-wasm/commit/14058bf82dd2d51e46a93cdce5a77049aedb67a9) - **deps**: bump pnpm/setup from 2 to 3 *(PR [#16](https://github.com/Crysthamus/tree-sitter-wasm/pull/16) by [@dependabot[bot]](https://github.com/apps/dependabot))*
+
+
 ## [v2.0.2] - 2026-09-21
 ### :sparkles: New Features
 - [`57225f3`](https://github.com/Crysthamus/tree-sitter-wasm/commit/57225f39dca3383037d539ad47cf6571526f12ae) - **parsers**: update cmake, fortran, kdl, nix, ocaml *(commit by [@Crysthamus](https://github.com/Crysthamus))*
@@ -156,3 +164,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v2.0.0]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v1.1.8...v2.0.0
 [v2.0.1]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v2.0.0...v2.0.1
 [v2.0.2]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v2.0.1...v2.0.2
+[v2.0.3]: https://github.com/Crysthamus/tree-sitter-wasm/compare/v2.0.2...v2.0.3
