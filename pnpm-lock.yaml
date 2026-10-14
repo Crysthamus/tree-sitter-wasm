@@ -177,7 +177,7 @@ importers:
         version: 0.23.5
       tree-sitter-cli:
         specifier: ^0.27.0
-        version: 0.27.0
+        version: 0.27.1
       tree-sitter-clojure:
         specifier: git+https://github.com/sogaiu/tree-sitter-clojure.git#e43eff80d17cf34852dcd92ca5e6986d23a7040f
         version: https://codeload.github.com/sogaiu/tree-sitter-clojure/tar.gz/e43eff80d17cf34852dcd92ca5e6986d23a7040f
@@ -668,8 +668,8 @@ packages:
     engines: {node: '>=12.0.0'}
     hasBin: true
 
-  tree-sitter-cli@0.27.0:
-    resolution: {integrity: sha512-E42kR0og1mFlZBxPj7K4fBXCTjxPTGe19U9RXGWNq0FQKzXOxIp8bhCYFMKhddiVZUsJwW35MYGU9Q1oVYtpbA==}
+  tree-sitter-cli@0.27.1:
+    resolution: {integrity: sha512-WFPEjxwscCjZP9uYj0rxT2TyGBkDcXUkGTthrMpxZFGvzXEYsbC3J0633Ps8dd2mMsdsbU8oVwmQ148lLHI7Xw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
 
@@ -1446,7 +1446,7 @@ snapshots:
 
   tree-sitter-cli@0.26.13: {}
 
-  tree-sitter-cli@0.27.0: {}
+  tree-sitter-cli@0.27.1: {}
 
   tree-sitter-clojure@https://codeload.github.com/sogaiu/tree-sitter-clojure/tar.gz/e43eff80d17cf34852dcd92ca5e6986d23a7040f: {}
 
