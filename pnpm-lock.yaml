@@ -116,8 +116,8 @@ importers:
         specifier: 0.25.0
         version: 0.25.0
       '@6cdh/tree-sitter-scheme':
-        specifier: 0.24.7-1
-        version: 0.24.7-1
+        specifier: 0.25.0
+        version: 0.25.0
       '@derekstride/tree-sitter-sql':
         specifier: ^0.3.11
         version: 0.3.11
@@ -420,10 +420,10 @@ packages:
       tree-sitter:
         optional: true
 
-  '@6cdh/tree-sitter-scheme@0.24.7-1':
-    resolution: {integrity: sha512-THIRms5EacgnUsVd3sF3HVFJVUsGJTjq/hHhdj325KUEsDZg3vPGVFH8PVZz8Si2U50gY5YhfoyGqAcv88Xang==}
+  '@6cdh/tree-sitter-scheme@0.25.0':
+    resolution: {integrity: sha512-+Q3aWGNvYeLUm9Nut6NX2wqgLZxUki7K7ttR0fKW61xBxaJ7VXAO5y2aUydP8Zp6A64GQn9EMHDcwUGfFPPTng==}
     peerDependencies:
-      tree-sitter: ^0.21.1
+      tree-sitter: ^0.25.1
       tree_sitter: '*'
     peerDependenciesMeta:
       tree_sitter:
@@ -1301,7 +1301,7 @@ snapshots:
       node-addon-api: 8.9.2
       node-gyp-build: 4.8.4
 
-  '@6cdh/tree-sitter-scheme@0.24.7-1':
+  '@6cdh/tree-sitter-scheme@0.25.0':
     dependencies:
       node-addon-api: 8.9.2
       node-gyp-build: 4.8.4
